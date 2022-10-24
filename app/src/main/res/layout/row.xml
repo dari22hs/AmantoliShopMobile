@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    android:background="#C35619E1">
+
+    <LinearLayout
+        android:id="@+id/llCardViewRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tvCodeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ocultar"
+            android:fontFamily="@font/metropolis_regular"
+            android:textSize="18sp"
+            android:textColor="@color/mainText"/>
+
+        <RelativeLayout
+            android:id="@+id/rlExpandableCodes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tvCodeOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SPOOKY2022 - USADO"
+                android:fontFamily="@font/metropolis_regular"
+                android:textSize="16sp"
+                android:textColor="@color/mainText"
+                android:padding="12dp"/>
+
+            <TextView
+                android:id="@+id/tvCodeTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DOTD2022 - USADO"
+                android:fontFamily="@font/metropolis_regular"
+                android:textSize="16sp"
+                android:textColor="@color/mainText"
+                android:padding="12dp"
+                android:layout_below="@id/tvCodeOne"/>
+
+            <TextView
+                android:id="@+id/tvCodeThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REVO22 - SIN USAR"
+                android:fontFamily="@font/metropolis_regular"
+                android:textSize="16sp"
+                android:textColor="@color/mainText"
+                android:padding="12dp"
+                android:layout_below="@id/tvCodeTwo"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

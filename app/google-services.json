@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "575204715289",
+    "project_id": "amantoliv2",
+    "storage_bucket": "amantoliv2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575204715289:android:e8fdf7a1138529a68cf388",
+        "android_client_info": {
+          "package_name": "com.example.amantoliv2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "575204715289-jl8qloee4mb9rmaiffo3vro4fqiosd14.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9z8q0l6MvsjbY3KZP46HEL9tajd0DGLk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "575204715289-jl8qloee4mb9rmaiffo3vro4fqiosd14.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

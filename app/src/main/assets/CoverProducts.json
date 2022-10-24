@@ -1,0 +1,54 @@
+[
+  {
+  "productName": "Mini y Nos",
+  "productId": "1",
+  "productPrice": "2800",
+  "productDes": "Par de gatos de cerámica, coloridos y con detalles en oro\n\nCantidad: 2 piezas\n\nPeso total: 3.4 kg\n\n\n\n",
+  "productRating": 4.8,
+  "productDisCount": "10%",
+  "productHave": true,
+  "productBrand": "Arte Gaia",
+  "productImage": "https://i.pinimg.com/564x/62/b2/c1/62b2c1bcde0a94d5aa37d634a5dc928e.jpg",
+  "productCategory": "Alfarería",
+  "productNote": "Lo nuevo de Gaia"
+  },
+  {
+  "productName": "Amanecer italiano",
+  "productId": "2",
+  "productPrice": "950",
+  "productDes": "Pintura al óleo con impecables trazos\n\nDimensiones\n2.70m x 2.5m\nPara decorar tu hogar u oficina\"\n\n\n\n\n\n",
+  "productRating": 4.5,
+  "productDisCount": "10%",
+  "productHave": true,
+  "productBrand": "MIRO pinturas",
+  "productImage": "https://i.pinimg.com/564x/8f/fe/51/8ffe51505548fecc656e720fe493330f.jpg",
+  "productCategory": "Pinturas",
+  "productNote": "MIRO pinturas"
+  },
+  {
+    "productName": "Jarrón multicapa",
+    "productId": "3",
+    "productPrice": "1100",
+    "productDes": "Jarrón construido con múltiples capas de alta dureza, dando un aspecto de relieve. Ideal para la decoración en casa\n\n\n\n\n\n\n\n\n\n\n\n",
+    "productRating": 4.5,
+    "productDisCount": "10%",
+    "productHave": true,
+    "productBrand": "Taller Barbosa",
+    "productImage": "https://i.pinimg.com/564x/b1/84/8d/b1848d62241421e3f24f435c9e2b6c16.jpg",
+    "productCategory": "Alfarería",
+    "productNote": "Jarrón multicapa"
+  },
+  {
+    "productName": "Las Tres Torrecitas",
+    "productId": "4",
+    "productPrice": "900",
+    "productDes": "Juego de vasijas ideales para el hogar, incluye cucharas de madera de alta calidad\n\nCantidad: 3 vasijas y 3 cucharas\n\n\n\n\n\n\n\n\n\n",
+    "productRating": 5.0,
+    "productDisCount": "5%",
+    "productHave": true,
+    "productBrand": "TonaYork",
+    "productImage": "https://i.pinimg.com/564x/64/62/75/646275e0befe1f1027e676a9735687a4.jpg",
+    "productCategory": "Alfarería",
+    "productNote": "TonaYork"
+  }
+]

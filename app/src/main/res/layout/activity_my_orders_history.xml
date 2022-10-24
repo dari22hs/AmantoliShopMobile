@@ -1,0 +1,1411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyOrdersHistory"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutOrders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/searchIv_ProfileFrag"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_back"
+            app:tint="@color/mainText"
+            />
+
+        <TextView
+            android:id="@+id/textViewPromos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="22dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/metropolis_regular"
+            android:gravity="center"
+            android:text="PEDIDOS Y DEVOLUCIONES"
+            android:textColor="@color/mainText"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--CARD PEDIDOS-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewOrders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:id="@+id/llCardViewRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/tvExpandOrders"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pedidos"
+                        android:fontFamily="@font/metropolis_semibold"
+                        android:textSize="18sp"
+                        android:textColor="@color/mainText"/>
+
+                    <RelativeLayout
+                        android:id="@+id/expandableLayoutOrders"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pedido #3-LG    Pendiente de envío"
+                                android:fontFamily="@font/metropolis_regular"
+                                android:textColor="@color/mainText" />
+
+                        </LinearLayout>
+
+                        <!--<View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#874FEA"
+                            android:layout_marginTop="18dp" />-->
+
+                        <!--HEADERS TABLE-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="30dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Artículo"
+                                android:layout_marginStart="20dp"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/metropolis_light"
+                                android:textColor="@color/mainText"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="120dp"
+                                android:text="Cantidad"
+                                android:fontFamily="@font/metropolis_light"
+                                android:textSize="12sp"
+                                android:textColor="@color/mainText"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="60dp"
+                                android:fontFamily="@font/metropolis_light"
+                                android:textSize="12sp"
+                                android:textColor="@color/mainText"
+                                android:text="Total"/>
+
+                        </LinearLayout>
+
+                        <!--PRODUCT 1-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="50dp"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/category_various"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAllCaps="false"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:text="Alebrije Shisho"
+                                android:textColor="@color/mainText"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/metropolis_regular"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="61dp"
+                                android:text="1"
+                                android:textColor="@color/mainText"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/metropolis_regular"
+                                android:textAllCaps="false"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="80dp"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"
+                                android:text="$2,400"/>
+
+                        </LinearLayout>
+
+                        <!--PRODUCT 2-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="100dp"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/category_sculptures"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAllCaps="false"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:text="Mini y Nos"
+                                android:textColor="@color/mainText"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/metropolis_regular"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="90dp"
+                                android:text="2"
+                                android:textColor="@color/mainText"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/metropolis_regular" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="76dp"
+                                android:text="$800"
+                                android:textColor="@color/mainText"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                        </LinearLayout>
+
+                        <!--PRODUCT 3-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="150dp"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/category_pottery"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAllCaps="false"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:text="Honor Maya"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="79dp"
+                                android:text="1"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="77dp"
+                                android:text="$5,900"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                        </LinearLayout>
+
+                        <!--RASTREAR - ENVÍO-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="200dp"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/tvTrackOrder"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="Rastrear pedido"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="130dp"
+                                android:text="Envío: $200"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                        </LinearLayout>
+
+                        <!--TOTAL-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="225dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="175dp"
+                                android:text="Total del pedido: $9,300"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#874FEA"
+                            android:layout_marginTop="245dp" />
+
+
+                        <!--Número de pedido 2-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="255dp"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pedido #2-LG    Entregado"
+                                android:fontFamily="@font/metropolis_regular"
+                                android:textColor="@color/mainText" />
+
+                        </LinearLayout>
+
+                        <!--HEADERS TABLE-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="275dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Artículo"
+                                android:layout_marginStart="20dp"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/metropolis_light"
+                                android:textColor="@color/mainText"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="120dp"
+                                android:text="Cantidad"
+                                android:fontFamily="@font/metropolis_light"
+                                android:textSize="12sp"
+                                android:textColor="@color/mainText"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="60dp"
+                                android:fontFamily="@font/metropolis_light"
+                                android:textSize="12sp"
+                                android:textColor="@color/mainText"
+                                android:text="Total"/>
+
+                        </LinearLayout>
+
+                        <!--PRODUCT 1-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="295dp"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/category_various"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAllCaps="false"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:text="Las Tres Torrecitas"
+                                android:textColor="@color/mainText"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/metropolis_regular"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="35dp"
+                                android:text="1"
+                                android:textColor="@color/mainText"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/metropolis_regular"
+                                android:textAllCaps="false"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="80dp"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"
+                                android:text="$2,400"/>
+
+                        </LinearLayout>
+
+                        <!--PRODUCT 2-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="345dp"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/category_various"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAllCaps="false"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:text="Jarrón multicapa"
+                                android:textColor="@color/mainText"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/metropolis_regular"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="50dp"
+                                android:text="2"
+                                android:textColor="@color/mainText"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/metropolis_regular"
+                                android:textAllCaps="false"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="80dp"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"
+                                android:text="$2,200"/>
+
+                        </LinearLayout>
+
+                        <!--RASTREAR - ENVÍO-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="395dp"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/tvTrackOrder2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="Rastrear pedido"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="130dp"
+                                android:text="Envío: $200"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                        </LinearLayout>
+
+                        <!--TOTAL-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="415dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="175dp"
+                                android:text="Total del pedido: $4,800"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#874FEA"
+                            android:layout_marginTop="435dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="445dp"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pedido #1-LG    Entregado"
+                                android:fontFamily="@font/metropolis_regular"
+                                android:textColor="@color/mainText" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="465dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Artículo"
+                                android:layout_marginStart="20dp"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/metropolis_light"
+                                android:textColor="@color/mainText"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="120dp"
+                                android:text="Cantidad"
+                                android:fontFamily="@font/metropolis_light"
+                                android:textSize="12sp"
+                                android:textColor="@color/mainText"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="60dp"
+                                android:fontFamily="@font/metropolis_light"
+                                android:textSize="12sp"
+                                android:textColor="@color/mainText"
+                                android:text="Total"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="485dp"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/category_various"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAllCaps="false"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:text="Amanecer italiano"
+                                android:textColor="@color/mainText"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/metropolis_regular"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="50dp"
+                                android:text="1"
+                                android:textColor="@color/mainText"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/metropolis_regular"
+                                android:textAllCaps="false"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="80dp"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"
+                                android:text="$950"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="530dp"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/tvTrackOrder3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="Rastrear pedido"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="130dp"
+                                android:text="Envío: $200"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                        </LinearLayout>
+
+                        <!--TOTAL-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="550dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="175dp"
+                                android:text="Total del pedido: $1,150"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!--CARD DEVOLUCIONES-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewDevol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:layout_marginTop="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+                    <TextView
+                        android:id="@+id/tvExpandDevol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Devoluciones"
+                        android:fontFamily="@font/metropolis_semibold"
+                        android:textSize="18sp"
+                        android:textColor="@color/mainText"/>
+
+                    <RelativeLayout
+                        android:id="@+id/expandableLayoutDevol"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pedido #0-LG    Devolución completa"
+                                android:fontFamily="@font/metropolis_regular"
+                                android:textColor="@color/mainText" />
+
+                        </LinearLayout>
+
+                        <!--<View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#874FEA"
+                            android:layout_marginTop="18dp" />-->
+
+                        <!--HEADERS TABLE-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="20dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Artículo"
+                                android:layout_marginStart="20dp"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/metropolis_light"
+                                android:textColor="@color/mainText"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="120dp"
+                                android:text="Cantidad"
+                                android:fontFamily="@font/metropolis_light"
+                                android:textSize="12sp"
+                                android:textColor="@color/mainText"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="60dp"
+                                android:fontFamily="@font/metropolis_light"
+                                android:textSize="12sp"
+                                android:textColor="@color/mainText"
+                                android:text="Total"/>
+
+                        </LinearLayout>
+
+                        <!--PRODUCT 1-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="40dp"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/category_various"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAllCaps="false"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:text="Aretes balance"
+                                android:textColor="@color/mainText"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/metropolis_regular"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="61dp"
+                                android:text="1"
+                                android:textColor="@color/mainText"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/metropolis_regular"
+                                android:textAllCaps="false"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="80dp"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"
+                                android:text="$900"/>
+
+                        </LinearLayout>
+
+                        <!--TOTAL-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="90dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="175dp"
+                                android:text="Total del pedido: $1,100"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!--PRODUCTOS SIMILARES A TUS PEDIDOS-->
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/metropolis_regular"
+                    android:textColor="@color/mainText"
+                    android:text="Podría gustarte"/>
+
+            </LinearLayout>
+
+            <!--HORIZONTAL SCROLL VIEW PARA PRODUCTOS SIMILARES A TUS PEDIDOS-->
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cvSimilarProduct1"
+                        android:layout_marginEnd="15dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp">
+
+                        <ImageView
+                            android:id="@+id/ivSimilarProducts1"
+                            android:layout_height="100dp"
+                            android:layout_width="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/alebrije_coyote_sp1"
+                            app:cardCornerRadius="8dp" />
+
+                        <TextView
+                            android:layout_marginTop="100dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/metropolis_light"
+                            android:textSize="14sp"
+                            android:textAlignment="center"
+                            android:text="Alebrije coyote"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cvSimilarProduct2"
+                        android:layout_marginEnd="15dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp">
+                        <ImageView
+                            android:layout_height="100dp"
+                            android:layout_width="match_parent"
+                            android:scaleType="fitXY"
+                            app:cardCornerRadius="8dp"
+                            android:src="@drawable/escultura_jaguar_sp2" />
+
+                        <TextView
+                            android:layout_marginTop="100dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/metropolis_light"
+                            android:textSize="14sp"
+                            android:textAlignment="center"
+                            android:text="Guerrero Jaguar"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cvSimilarProduct3"
+                        android:layout_marginEnd="15dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp">
+                        <ImageView
+                            android:layout_height="100dp"
+                            android:layout_width="match_parent"
+                            android:scaleType="centerCrop"
+                            app:cardCornerRadius="8dp"
+                            android:src="@drawable/alebrije_gato_sp3" />
+
+                        <TextView
+                            android:layout_marginTop="100dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/metropolis_light"
+                            android:textSize="14sp"
+                            android:textAlignment="center"
+                            android:text="Alebrije Dragato"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cvSimilarProduct4"
+                        android:layout_marginEnd="15dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp">
+                        <ImageView
+                            android:layout_height="100dp"
+                            android:layout_width="match_parent"
+                            android:scaleType="centerCrop"
+                            app:cardCornerRadius="8dp"
+                            android:src="@drawable/alebrije_cabra_sp4" />
+
+                        <TextView
+                            android:layout_marginTop="100dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/metropolis_light"
+                            android:textSize="14sp"
+                            android:textAlignment="center"
+                            android:text="El más cabrito"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginEnd="15dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp">
+                        <ImageView
+                            android:layout_height="100dp"
+                            android:layout_width="match_parent"
+                            android:scaleType="centerCrop"
+                            app:cardCornerRadius="8dp"
+                            android:src="@drawable/calavera_sp5" />
+
+                        <TextView
+                            android:layout_marginTop="100dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/metropolis_light"
+                            android:textSize="14sp"
+                            android:textAlignment="center"
+                            android:text="Cala-Mar"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginEnd="15dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp">
+                        <ImageView
+                            android:layout_height="100dp"
+                            android:layout_width="match_parent"
+                            android:scaleType="centerCrop"
+                            app:cardCornerRadius="8dp"
+                            android:src="@drawable/jarrito_sp6" />
+
+                        <TextView
+                            android:layout_marginTop="100dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/metropolis_light"
+                            android:textSize="14sp"
+                            android:textAlignment="center"
+                            android:text="El Jarrín"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginEnd="15dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp">
+                        <ImageView
+                            android:layout_height="100dp"
+                            android:layout_width="match_parent"
+                            android:scaleType="centerCrop"
+                            app:cardCornerRadius="8dp"
+                            android:src="@drawable/category_sculptures" />
+
+                        <TextView
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginTop="100dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/metropolis_light"
+                            android:textSize="14sp"
+                            android:text="Producto 1"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginEnd="15dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp">
+                        <ImageView
+                            android:layout_height="100dp"
+                            android:layout_width="match_parent"
+                            android:scaleType="centerCrop"
+                            app:cardCornerRadius="8dp"
+                            android:src="@drawable/category_sculptures" />
+
+                        <TextView
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginTop="100dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/metropolis_light"
+                            android:textSize="14sp"
+                            android:text="Producto 1"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginEnd="15dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp">
+                        <ImageView
+                            android:layout_height="100dp"
+                            android:layout_width="match_parent"
+                            android:scaleType="centerCrop"
+                            app:cardCornerRadius="8dp"
+                            android:src="@drawable/category_sculptures" />
+
+                        <TextView
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginTop="100dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/metropolis_light"
+                            android:textSize="14sp"
+                            android:text="Producto 1"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginEnd="15dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp">
+                        <ImageView
+                            android:layout_height="100dp"
+                            android:layout_width="match_parent"
+                            android:scaleType="centerCrop"
+                            app:cardCornerRadius="8dp"
+                            android:src="@drawable/category_sculptures" />
+
+                        <TextView
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginTop="100dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/metropolis_light"
+                            android:textSize="14sp"
+                            android:text="Producto 1"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <!--HISTORIAL DE PRODUCTOS-->
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/metropolis_regular"
+                    android:textColor="@color/mainText"
+                    android:text="Historial de productos buscados"/>
+
+            </LinearLayout>
+
+            <!--HORIZONTAL SCROLL VIEW PARA PRODUCTOS SIMILARES A TUS PEDIDOS-->
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginEnd="15dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp">
+
+                        <ImageView
+                            android:layout_height="100dp"
+                            android:layout_width="match_parent"
+                            android:scaleType="centerCrop"
+                            app:cardCornerRadius="8dp"
+                            android:src="@drawable/category_sculptures" />
+
+                        <TextView
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginTop="100dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/metropolis_light"
+                            android:textSize="14sp"
+                            android:text="Producto 1"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginEnd="15dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp">
+                        <ImageView
+                            android:layout_height="100dp"
+                            android:layout_width="match_parent"
+                            android:scaleType="centerCrop"
+                            app:cardCornerRadius="8dp"
+                            android:src="@drawable/category_sculptures" />
+
+                        <TextView
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginTop="100dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/metropolis_light"
+                            android:textSize="14sp"
+                            android:text="Producto 1"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginEnd="15dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp">
+                        <ImageView
+                            android:layout_height="100dp"
+                            android:layout_width="match_parent"
+                            android:scaleType="centerCrop"
+                            app:cardCornerRadius="8dp"
+                            android:src="@drawable/category_sculptures" />
+
+                        <TextView
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginTop="100dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/metropolis_light"
+                            android:textSize="14sp"
+                            android:text="Producto 1"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginEnd="15dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp">
+                        <ImageView
+                            android:layout_height="100dp"
+                            android:layout_width="match_parent"
+                            android:scaleType="centerCrop"
+                            app:cardCornerRadius="8dp"
+                            android:src="@drawable/category_sculptures" />
+
+                        <TextView
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginTop="100dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/metropolis_light"
+                            android:textSize="14sp"
+                            android:text="Producto 1"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginEnd="15dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp">
+                        <ImageView
+                            android:layout_height="100dp"
+                            android:layout_width="match_parent"
+                            android:scaleType="centerCrop"
+                            app:cardCornerRadius="8dp"
+                            android:src="@drawable/category_sculptures" />
+
+                        <TextView
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginTop="100dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/metropolis_light"
+                            android:textSize="14sp"
+                            android:text="Producto 1"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginEnd="15dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp">
+                        <ImageView
+                            android:layout_height="100dp"
+                            android:layout_width="match_parent"
+                            android:scaleType="centerCrop"
+                            app:cardCornerRadius="8dp"
+                            android:src="@drawable/category_sculptures" />
+
+                        <TextView
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginTop="100dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/metropolis_light"
+                            android:textSize="14sp"
+                            android:text="Producto 1"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginEnd="15dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp">
+                        <ImageView
+                            android:layout_height="100dp"
+                            android:layout_width="match_parent"
+                            android:scaleType="centerCrop"
+                            app:cardCornerRadius="8dp"
+                            android:src="@drawable/category_sculptures" />
+
+                        <TextView
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginTop="100dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/metropolis_light"
+                            android:textSize="14sp"
+                            android:text="Producto 1"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginEnd="15dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp">
+                        <ImageView
+                            android:layout_height="100dp"
+                            android:layout_width="match_parent"
+                            android:scaleType="centerCrop"
+                            app:cardCornerRadius="8dp"
+                            android:src="@drawable/category_sculptures" />
+
+                        <TextView
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginTop="100dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/metropolis_light"
+                            android:textSize="14sp"
+                            android:text="Producto 1"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginEnd="15dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp">
+                        <ImageView
+                            android:layout_height="100dp"
+                            android:layout_width="match_parent"
+                            android:scaleType="centerCrop"
+                            app:cardCornerRadius="8dp"
+                            android:src="@drawable/category_sculptures" />
+
+                        <TextView
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginTop="100dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/metropolis_light"
+                            android:textSize="14sp"
+                            android:text="Producto 1"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginEnd="15dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp">
+                        <ImageView
+                            android:layout_height="100dp"
+                            android:layout_width="match_parent"
+                            android:scaleType="centerCrop"
+                            app:cardCornerRadius="8dp"
+                            android:src="@drawable/category_sculptures" />
+
+                        <TextView
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginTop="100dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/metropolis_light"
+                            android:textSize="14sp"
+                            android:text="Producto 1"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="120dp"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:fontFamily="@font/metropolis_light"
+                android:text="Derechos reservados 2022 \@Nextia Solutions MX"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
