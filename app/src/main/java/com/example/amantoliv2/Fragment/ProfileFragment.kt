@@ -72,7 +72,7 @@ class ProfileFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
+
         val view = inflater.inflate(R.layout.fragment_profile, container, false)
 
         profileImage_profileFrag = view.findViewById(R.id.profileImage_profileFrag)

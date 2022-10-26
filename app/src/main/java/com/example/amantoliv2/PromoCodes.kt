@@ -64,6 +64,8 @@ class PromoCodes : AppCompatActivity() {
     }
 
     private fun initData() {
-        TODO("Not yet implemented")
+        TODO("COMPLETAR PERFIL - AGREGAR SUSCRIPCIONES")
+        TODO("PEDIDOS - RASTREAR PEDIDOS - TERMINAR SCROLL VIEW")
+        TODO("RESEÑAS")
     }
 }
