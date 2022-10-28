@@ -67,5 +67,6 @@ class PromoCodes : AppCompatActivity() {
         TODO("COMPLETAR PERFIL - AGREGAR SUSCRIPCIONES")
         TODO("PEDIDOS - RASTREAR PEDIDOS - TERMINAR SCROLL VIEW")
         TODO("RESEÑAS")
+        TODO("TERMINAR PROCEDER AL PAGO")
     }
 }

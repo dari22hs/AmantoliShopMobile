@@ -1,13 +1,16 @@
 package com.example.amantoliv2
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.view.View
 import android.widget.*
+import androidx.viewpager.widget.ViewPager
 import com.airbnb.lottie.LottieAnimationView
 import com.example.amantoliv2.Utils.Extensions.toast
+import com.google.android.material.tabs.TabLayout
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
@@ -16,6 +19,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.tasks.await
 import kotlinx.coroutines.withContext
+
 
 class SettingsActivity : AppCompatActivity() {
 
@@ -29,6 +33,7 @@ class SettingsActivity : AppCompatActivity() {
     private val userCollectionRef = Firebase.firestore.collection("Users")
     val firebaseAuth: FirebaseAuth = FirebaseAuth.getInstance()
 
+    lateinit var llProAccount: LinearLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,6 +46,13 @@ class SettingsActivity : AppCompatActivity() {
 
         var checkAnim = findViewById<LottieAnimationView>(R.id.animationViewAppMode)
         var chkb1 = findViewById<CheckBox>(R.id.chkb1)
+
+        val llProAccount = findViewById<LinearLayout>(R.id.llProAccount)
+
+        llProAccount.setOnClickListener {
+            val intent = Intent(this, SubscriptionInfo::class.java)
+            startActivity(intent)
+        }
 
 
         checkAnim.setOnClickListener{

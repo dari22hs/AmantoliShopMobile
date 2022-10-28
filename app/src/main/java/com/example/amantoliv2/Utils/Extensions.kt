@@ -18,6 +18,6 @@ object Extensions {
                 CardG.plus(i)
             }
         }
-        return "**** **** **** $CardG"
+        return "**** **** **** **** $CardG"
     }
 }
