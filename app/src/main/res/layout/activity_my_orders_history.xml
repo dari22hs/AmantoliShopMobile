@@ -156,7 +156,7 @@
                                 android:layout_width="45dp"
                                 android:layout_height="45dp"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/category_various"/>
+                                android:src="@drawable/escul_shisho"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -203,7 +203,7 @@
                                 android:layout_width="45dp"
                                 android:layout_height="45dp"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/category_sculptures"/>
+                                android:src="@drawable/escul_mini_y_nos"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -249,7 +249,7 @@
                                 android:layout_width="45dp"
                                 android:layout_height="45dp"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/category_pottery"/>
+                                android:src="@drawable/escul_honor_maya"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -402,7 +402,7 @@
                                 android:layout_width="45dp"
                                 android:layout_height="45dp"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/category_various"/>
+                                android:src="@drawable/alfa_tres_torrecitas"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -449,7 +449,7 @@
                                 android:layout_width="45dp"
                                 android:layout_height="45dp"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/category_various"/>
+                                android:src="@drawable/alfa_jarron_multicapa"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -599,7 +599,7 @@
                                 android:layout_width="45dp"
                                 android:layout_height="45dp"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/category_various"/>
+                                android:src="@drawable/pint_amanecer_italiano"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -638,7 +638,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:layout_marginTop="530dp"
+                            android:layout_marginTop="535dp"
                             android:gravity="center_vertical">
 
                             <TextView
@@ -667,7 +667,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:layout_marginTop="550dp">
+                            android:layout_marginTop="555dp">
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -784,7 +784,7 @@
                                 android:layout_width="45dp"
                                 android:layout_height="45dp"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/category_various"/>
+                                android:src="@drawable/joy_aretes_balance"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -1014,7 +1014,7 @@
                             android:fontFamily="@font/metropolis_light"
                             android:textSize="14sp"
                             android:textAlignment="center"
-                            android:text="El Jarrín"/>
+                            android:text="Piel de Dragón"/>
 
                     </androidx.cardview.widget.CardView>
 
@@ -1028,17 +1028,16 @@
                             android:layout_width="match_parent"
                             android:scaleType="centerCrop"
                             app:cardCornerRadius="8dp"
-                            android:src="@drawable/category_sculptures" />
+                            android:src="@drawable/jarro_libelula_sp10" />
 
                         <TextView
-                            android:layout_marginStart="15dp"
-                            android:layout_marginEnd="15dp"
                             android:layout_marginTop="100dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/metropolis_light"
                             android:textSize="14sp"
-                            android:text="Producto 1"/>
+                            android:textAlignment="center"
+                            android:text="Sombra Libélula"/>
 
                     </androidx.cardview.widget.CardView>
 
@@ -1052,17 +1051,16 @@
                             android:layout_width="match_parent"
                             android:scaleType="centerCrop"
                             app:cardCornerRadius="8dp"
-                            android:src="@drawable/category_sculptures" />
+                            android:src="@drawable/jarro_flores_sp11" />
 
                         <TextView
-                            android:layout_marginStart="15dp"
-                            android:layout_marginEnd="15dp"
                             android:layout_marginTop="100dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/metropolis_light"
                             android:textSize="14sp"
-                            android:text="Producto 1"/>
+                            android:textAlignment="center"
+                            android:text="Flor de Ojo"/>
 
                     </androidx.cardview.widget.CardView>
 
@@ -1076,17 +1074,16 @@
                             android:layout_width="match_parent"
                             android:scaleType="centerCrop"
                             app:cardCornerRadius="8dp"
-                            android:src="@drawable/category_sculptures" />
+                            android:src="@drawable/jarron_ciudad_sp12" />
 
                         <TextView
-                            android:layout_marginStart="15dp"
-                            android:layout_marginEnd="15dp"
                             android:layout_marginTop="100dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/metropolis_light"
                             android:textSize="14sp"
-                            android:text="Producto 1"/>
+                            android:textAlignment="center"
+                            android:text="Ciudad Barro"/>
 
                     </androidx.cardview.widget.CardView>
 
@@ -1100,17 +1097,16 @@
                             android:layout_width="match_parent"
                             android:scaleType="centerCrop"
                             app:cardCornerRadius="8dp"
-                            android:src="@drawable/category_sculptures" />
+                            android:src="@drawable/jarro_pez_sp13" />
 
                         <TextView
-                            android:layout_marginStart="15dp"
-                            android:layout_marginEnd="15dp"
                             android:layout_marginTop="100dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/metropolis_light"
                             android:textSize="14sp"
-                            android:text="Producto 1"/>
+                            android:textAlignment="center"
+                            android:text="Pez dormido"/>
 
                     </androidx.cardview.widget.CardView>
 
@@ -1156,19 +1152,18 @@
                         <ImageView
                             android:layout_height="100dp"
                             android:layout_width="match_parent"
-                            android:scaleType="centerCrop"
+                            android:scaleType="fitXY"
                             app:cardCornerRadius="8dp"
-                            android:src="@drawable/category_sculptures" />
+                            android:src="@drawable/escul_jaguar_del_sur" />
 
                         <TextView
-                            android:layout_marginStart="15dp"
-                            android:layout_marginEnd="15dp"
                             android:layout_marginTop="100dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/metropolis_light"
                             android:textSize="14sp"
-                            android:text="Producto 1"/>
+                            android:textAlignment="center"
+                            android:text="Jaguar del Sur"/>
 
                     </androidx.cardview.widget.CardView>
 
@@ -1182,17 +1177,16 @@
                             android:layout_width="match_parent"
                             android:scaleType="centerCrop"
                             app:cardCornerRadius="8dp"
-                            android:src="@drawable/category_sculptures" />
+                            android:src="@drawable/juegos_set_trompos" />
 
                         <TextView
-                            android:layout_marginStart="15dp"
-                            android:layout_marginEnd="15dp"
                             android:layout_marginTop="100dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/metropolis_light"
                             android:textSize="14sp"
-                            android:text="Producto 1"/>
+                            android:textAlignment="center"
+                            android:text="Set de Trompos"/>
 
                     </androidx.cardview.widget.CardView>
 
@@ -1206,17 +1200,39 @@
                             android:layout_width="match_parent"
                             android:scaleType="centerCrop"
                             app:cardCornerRadius="8dp"
-                            android:src="@drawable/category_sculptures" />
+                            android:src="@drawable/juegos_set_baleros" />
 
                         <TextView
-                            android:layout_marginStart="15dp"
-                            android:layout_marginEnd="15dp"
                             android:layout_marginTop="100dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/metropolis_light"
                             android:textSize="14sp"
-                            android:text="Producto 1"/>
+                            android:textAlignment="center"
+                            android:text="Set de Baleros"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginEnd="15dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp">
+                        <ImageView
+                            android:layout_height="100dp"
+                            android:layout_width="match_parent"
+                            android:scaleType="fitXY"
+                            app:cardCornerRadius="8dp"
+                            android:src="@drawable/juegos_yoyo1" />
+
+                        <TextView
+                            android:layout_marginTop="100dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/metropolis_light"
+                            android:textSize="14sp"
+                            android:textAlignment="center"
+                            android:text="Colo-Yoyo"/>
 
                     </androidx.cardview.widget.CardView>
 
@@ -1230,7 +1246,7 @@
                             android:layout_width="match_parent"
                             android:scaleType="centerCrop"
                             app:cardCornerRadius="8dp"
-                            android:src="@drawable/category_sculptures" />
+                            android:src="@drawable/juegos_trompo_pro_madera" />
 
                         <TextView
                             android:layout_marginStart="15dp"
@@ -1240,31 +1256,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/metropolis_light"
                             android:textSize="14sp"
-                            android:text="Producto 1"/>
-
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_marginEnd="15dp"
-                        app:cardCornerRadius="8dp"
-                        android:layout_width="120dp"
-                        android:layout_height="120dp">
-                        <ImageView
-                            android:layout_height="100dp"
-                            android:layout_width="match_parent"
-                            android:scaleType="centerCrop"
-                            app:cardCornerRadius="8dp"
-                            android:src="@drawable/category_sculptures" />
-
-                        <TextView
-                            android:layout_marginStart="15dp"
-                            android:layout_marginEnd="15dp"
-                            android:layout_marginTop="100dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/metropolis_light"
-                            android:textSize="14sp"
-                            android:text="Producto 1"/>
+                            android:text="El Trompón"/>
 
                     </androidx.cardview.widget.CardView>
 
