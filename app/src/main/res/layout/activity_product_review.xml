@@ -284,7 +284,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="De locos !"
+                        android:text="Nah de locos"
                         android:textSize="14sp"
                         android:fontFamily="@font/metropolis_bold"
                         android:textColor="@color/mainText"
@@ -337,7 +337,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Karina Montes"
+                    android:text="Eduardo Barbosa"
                     android:textSize="14sp"
                     android:fontFamily="@font/metropolis_semibold"
                     android:textColor="@color/mainText"/>
@@ -352,7 +352,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Los améee"
+                        android:text="La neta se nota la dedicación que le pusieron, están geniales."
                         android:textSize="14sp"
                         android:fontFamily="@font/metropolis_bold"
                         android:textColor="@color/mainText"
