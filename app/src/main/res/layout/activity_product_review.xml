@@ -1,0 +1,1033 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ProductReviewActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutReviews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/searchIv_ReviewsAct"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_back"
+            app:tint="@color/mainText"
+            />
+
+        <TextView
+            android:id="@+id/textViewReviews"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="22dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/metropolis_regular"
+            android:gravity="center"
+            android:text="RESEÑAS"
+            android:textColor="@color/mainText"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp">
+
+        <ImageView
+            android:id="@+id/productImage_ProductReviewPage"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/escul_mini_y_nos"
+            android:layout_marginHorizontal="50dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="360dp"
+        android:layout_marginHorizontal="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mini y Nos"
+            android:textSize="16sp"
+            android:fontFamily="@font/metropolis_semibold"
+            android:textColor="@color/mainText"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.8 de 5 (13 calificaciones)"
+            android:textSize="14sp"
+            android:fontFamily="@font/metropolis_semibold"
+            android:textColor="@color/mainText"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="400dp"
+        android:layout_marginHorizontal="50dp">
+
+        <RatingBar
+            android:id="@+id/productRating_singleProduct"
+            style="@style/Widget.AppCompat.RatingBar.Indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="4.8"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:transformPivotX="0dp"
+            android:transformPivotY="15dp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="438dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--Reseña 1-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Franco Nava"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/metropolis_semibold"
+                    android:textColor="@color/mainText"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Increíbles detalles"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/metropolis_bold"
+                        android:textColor="@color/mainText"
+                        android:paddingEnd="30dp"/>
+
+                    <RatingBar
+                        android:id="@+id/ratingCustomer1"
+                        style="@style/Widget.AppCompat.RatingBar.Indicator"
+                        android:progressTint="#E3C507"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="5"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        android:transformPivotX="0dp"
+                        android:transformPivotY="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tenía mis dudas, pero en cuanto las vi en persona se notó la calidad y sobretodo los detalles. Llegó a mi casa sin un solo rasguño. Muy recomendado."
+                        android:textSize="14sp"
+                        android:fontFamily="@font/metropolis_light"
+                        android:textColor="@color/mainText"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#B111F4"/>
+
+            </LinearLayout>
+
+            <!--Reseña 2-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Iván Bernal"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/metropolis_semibold"
+                    android:textColor="@color/mainText"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="De lo mejor"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/metropolis_bold"
+                        android:textColor="@color/mainText"
+                        android:paddingEnd="30dp"/>
+
+                    <RatingBar
+                        android:id="@+id/ratingCustomer2"
+                        style="@style/Widget.AppCompat.RatingBar.Indicator"
+                        android:progressTint="#E3C507"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="5"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        android:transformPivotX="0dp"
+                        android:transformPivotY="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Están muy bonitos y se nota la dedicación. Quedaron muy bien en mi jardín."
+                        android:textSize="14sp"
+                        android:fontFamily="@font/metropolis_light"
+                        android:textColor="@color/mainText"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#B111F4"/>
+
+            </LinearLayout>
+
+            <!--Reseña 3-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Karina Montes"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/metropolis_semibold"
+                    android:textColor="@color/mainText"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Los améee"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/metropolis_bold"
+                        android:textColor="@color/mainText"
+                        android:paddingEnd="30dp"/>
+
+                    <RatingBar
+                        android:id="@+id/ratingCustomer3"
+                        style="@style/Widget.AppCompat.RatingBar.Indicator"
+                        android:progressTint="#E3C507"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="5"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        android:transformPivotX="0dp"
+                        android:transformPivotY="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Los iba a dar como regalo pero me encantaron y me los quedé jajaja. Ya pedí otros porque están preciosos los gatitos."
+                        android:textSize="14sp"
+                        android:fontFamily="@font/metropolis_light"
+                        android:textColor="@color/mainText"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#B111F4"/>
+
+            </LinearLayout>
+
+            <!--Reseña 4-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Karina Montes"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/metropolis_semibold"
+                    android:textColor="@color/mainText"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Los améee"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/metropolis_bold"
+                        android:textColor="@color/mainText"
+                        android:paddingEnd="30dp"/>
+
+                    <RatingBar
+                        style="@style/Widget.AppCompat.RatingBar.Indicator"
+                        android:progressTint="#E3C507"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="5"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        android:transformPivotX="0dp"
+                        android:transformPivotY="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Los iba a dar como regalo pero me encantaron y me los quedé jajaja. Ya pedí otros porque están preciosos los gatitos."
+                        android:textSize="14sp"
+                        android:fontFamily="@font/metropolis_light"
+                        android:textColor="@color/mainText"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#B111F4"/>
+
+            </LinearLayout>
+
+            <!--Reseña 5-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Karina Montes"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/metropolis_semibold"
+                    android:textColor="@color/mainText"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Los améee"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/metropolis_bold"
+                        android:textColor="@color/mainText"
+                        android:paddingEnd="30dp"/>
+
+                    <RatingBar
+                        style="@style/Widget.AppCompat.RatingBar.Indicator"
+                        android:progressTint="#E3C507"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="5"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        android:transformPivotX="0dp"
+                        android:transformPivotY="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Los iba a dar como regalo pero me encantaron y me los quedé jajaja. Ya pedí otros porque están preciosos los gatitos."
+                        android:textSize="14sp"
+                        android:fontFamily="@font/metropolis_light"
+                        android:textColor="@color/mainText"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#B111F4"/>
+
+            </LinearLayout>
+
+            <!--Reseña 6-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Karina Montes"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/metropolis_semibold"
+                    android:textColor="@color/mainText"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Los améee"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/metropolis_bold"
+                        android:textColor="@color/mainText"
+                        android:paddingEnd="30dp"/>
+
+                    <RatingBar
+                        style="@style/Widget.AppCompat.RatingBar.Indicator"
+                        android:progressTint="#E3C507"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="5"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        android:transformPivotX="0dp"
+                        android:transformPivotY="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Los iba a dar como regalo pero me encantaron y me los quedé jajaja. Ya pedí otros porque están preciosos los gatitos."
+                        android:textSize="14sp"
+                        android:fontFamily="@font/metropolis_light"
+                        android:textColor="@color/mainText"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#B111F4"/>
+
+            </LinearLayout>
+
+            <!--Reseña 7-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Karina Montes"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/metropolis_semibold"
+                    android:textColor="@color/mainText"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Los améee"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/metropolis_bold"
+                        android:textColor="@color/mainText"
+                        android:paddingEnd="30dp"/>
+
+                    <RatingBar
+                        style="@style/Widget.AppCompat.RatingBar.Indicator"
+                        android:progressTint="#E3C507"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="5"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        android:transformPivotX="0dp"
+                        android:transformPivotY="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Los iba a dar como regalo pero me encantaron y me los quedé jajaja. Ya pedí otros porque están preciosos los gatitos."
+                        android:textSize="14sp"
+                        android:fontFamily="@font/metropolis_light"
+                        android:textColor="@color/mainText"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#B111F4"/>
+
+            </LinearLayout>
+
+            <!--Reseña 8-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Karina Montes"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/metropolis_semibold"
+                    android:textColor="@color/mainText"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Los améee"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/metropolis_bold"
+                        android:textColor="@color/mainText"
+                        android:paddingEnd="30dp"/>
+
+                    <RatingBar
+                        style="@style/Widget.AppCompat.RatingBar.Indicator"
+                        android:progressTint="#E3C507"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="5"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        android:transformPivotX="0dp"
+                        android:transformPivotY="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Los iba a dar como regalo pero me encantaron y me los quedé jajaja. Ya pedí otros porque están preciosos los gatitos."
+                        android:textSize="14sp"
+                        android:fontFamily="@font/metropolis_light"
+                        android:textColor="@color/mainText"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#B111F4"/>
+
+            </LinearLayout>
+
+            <!--Reseña 9-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Karina Montes"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/metropolis_semibold"
+                    android:textColor="@color/mainText"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Los améee"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/metropolis_bold"
+                        android:textColor="@color/mainText"
+                        android:paddingEnd="30dp"/>
+
+                    <RatingBar
+                        style="@style/Widget.AppCompat.RatingBar.Indicator"
+                        android:progressTint="#E3C507"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="5"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        android:transformPivotX="0dp"
+                        android:transformPivotY="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Los iba a dar como regalo pero me encantaron y me los quedé jajaja. Ya pedí otros porque están preciosos los gatitos."
+                        android:textSize="14sp"
+                        android:fontFamily="@font/metropolis_light"
+                        android:textColor="@color/mainText"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#B111F4"/>
+
+            </LinearLayout>
+
+            <!--Reseña 10-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Karina Montes"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/metropolis_semibold"
+                    android:textColor="@color/mainText"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Los améee"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/metropolis_bold"
+                        android:textColor="@color/mainText"
+                        android:paddingEnd="30dp"/>
+
+                    <RatingBar
+                        style="@style/Widget.AppCompat.RatingBar.Indicator"
+                        android:progressTint="#E3C507"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="5"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        android:transformPivotX="0dp"
+                        android:transformPivotY="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Los iba a dar como regalo pero me encantaron y me los quedé jajaja. Ya pedí otros porque están preciosos los gatitos."
+                        android:textSize="14sp"
+                        android:fontFamily="@font/metropolis_light"
+                        android:textColor="@color/mainText"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#B111F4"/>
+
+            </LinearLayout>
+
+            <!--Reseña 11-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Karina Montes"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/metropolis_semibold"
+                    android:textColor="@color/mainText"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Los améee"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/metropolis_bold"
+                        android:textColor="@color/mainText"
+                        android:paddingEnd="30dp"/>
+
+                    <RatingBar
+                        style="@style/Widget.AppCompat.RatingBar.Indicator"
+                        android:progressTint="#E3C507"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="5"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        android:transformPivotX="0dp"
+                        android:transformPivotY="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Los iba a dar como regalo pero me encantaron y me los quedé jajaja. Ya pedí otros porque están preciosos los gatitos."
+                        android:textSize="14sp"
+                        android:fontFamily="@font/metropolis_light"
+                        android:textColor="@color/mainText"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#B111F4"/>
+
+            </LinearLayout>
+
+            <!--Reseña 12-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Karina Montes"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/metropolis_semibold"
+                    android:textColor="@color/mainText"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Los améee"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/metropolis_bold"
+                        android:textColor="@color/mainText"
+                        android:paddingEnd="30dp"/>
+
+                    <RatingBar
+                        style="@style/Widget.AppCompat.RatingBar.Indicator"
+                        android:progressTint="#E3C507"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="5"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        android:transformPivotX="0dp"
+                        android:transformPivotY="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Los iba a dar como regalo pero me encantaron y me los quedé jajaja. Ya pedí otros porque están preciosos los gatitos."
+                        android:textSize="14sp"
+                        android:fontFamily="@font/metropolis_light"
+                        android:textColor="@color/mainText"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#B111F4"/>
+
+            </LinearLayout>
+
+            <!--Reseña 13-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Karina Montes"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/metropolis_semibold"
+                    android:textColor="@color/mainText"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Los améee"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/metropolis_bold"
+                        android:textColor="@color/mainText"
+                        android:paddingEnd="30dp"/>
+
+                    <RatingBar
+                        style="@style/Widget.AppCompat.RatingBar.Indicator"
+                        android:progressTint="#E3C507"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="5"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        android:transformPivotX="0dp"
+                        android:transformPivotY="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Los iba a dar como regalo pero me encantaron y me los quedé jajaja. Ya pedí otros porque están preciosos los gatitos."
+                        android:textSize="14sp"
+                        android:fontFamily="@font/metropolis_light"
+                        android:textColor="@color/mainText"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#B111F4"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Comparte tu opinión sobre este producto"
+                    android:textColor="@color/mainText"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/metropolis_bold"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnPostReview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="Escribir reseña"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/metropolis_semibold"
+                    android:textColor="@color/mainText"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:background="@drawable/btn_bg_4"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

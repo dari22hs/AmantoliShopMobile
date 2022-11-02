@@ -28,17 +28,9 @@ class ShippingAddressActivity : AppCompatActivity() {
             val builder = AlertDialog.Builder(this@ShippingAddressActivity)
             builder.setView(view)
 
-            //val inflatedView: View = layoutInflater.inflate(R.layout.dialog_add_address, null)
-            //val btnCloseAddressDialog = inflatedView.findViewById<AppCompatButton>(R.id.btnCloseAddressDialog)
-
             val dialog = builder.create()
             dialog.show()
             dialog.window?.setBackgroundDrawableResource(android.R.color.transparent)
-
-            //val btnCloseAddressDialog: AppCompatButton = findViewById(R.id.btnCloseAddressDialog)
-            /*btnCloseAddressDialog.setOnClickListener {
-                dialog.dismiss()
-            }*/
 
         }
 

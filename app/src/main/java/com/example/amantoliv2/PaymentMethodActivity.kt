@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.widget.ImageView
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -29,6 +30,8 @@ class PaymentMethodActivity : AppCompatActivity(), CarDItemClickAdapter {
     lateinit var bottomSheetView: View
     private lateinit var cardViewModel: CardViewModel
 
+    lateinit var addCard_PaymentMethodPage: FloatingActionButton
+
     lateinit var Item: ArrayList<CardEntity>
 
     @SuppressLint("MissingInflatedId")
@@ -36,23 +39,37 @@ class PaymentMethodActivity : AppCompatActivity(), CarDItemClickAdapter {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_payment_method)
 
-        cardRec = findViewById(R.id.cardRecView_paymentMethodPage)
-        val backIv_PaymentMethodsPage = findViewById<ImageView>(R.id.backIv_PaymentMethodsPage)
-        val addCard_PaymentMethodPage = findViewById<FloatingActionButton>(R.id.addCard_PaymentMethodPage)
+        addCard_PaymentMethodPage = findViewById(R.id.addCard_PaymentMethodPage)
 
-        Item = arrayListOf()
-        cardViewModel = ViewModelProviders.of(this).get(CardViewModel::class.java)
+        addCard_PaymentMethodPage.setOnClickListener{
+            val view = View.inflate(this@PaymentMethodActivity, R.layout.dialog_add_card, null)
+
+            val builder = AlertDialog.Builder(this@PaymentMethodActivity)
+            builder.setView(view)
+
+            val dialog = builder.create()
+            dialog.show()
+            dialog.window?.setBackgroundDrawableResource(android.R.color.transparent)
+
+        }
+
+        //cardRec = findViewById(R.id.cardRecView_paymentMethodPage)
+        //val backIv_PaymentMethodsPage = findViewById<ImageView>(R.id.backIv_PaymentMethodsPage)
+        //val addCard_PaymentMethodPage = findViewById<FloatingActionButton>(R.id.addCard_PaymentMethodPage)
+
+        //Item = arrayListOf()
+        //cardViewModel = ViewModelProviders.of(this).get(CardViewModel::class.java)
 
         //getRecData()
-        cardRec.layoutManager = LinearLayoutManager(this)
+        /*cardRec.layoutManager = LinearLayoutManager(this)
         cardAdapter = CardAdapter( this, this )
-        cardRec.adapter = cardAdapter
+        cardRec.adapter = cardAdapter*/
 
 
 
-        backIv_PaymentMethodsPage.setOnClickListener {
+        /*backIv_PaymentMethodsPage.setOnClickListener {
             onBackPressed()
-        }
+        }*/
 
         bottomSheetDialod = BottomSheetDialog(
             this, R.style.BottomSheetDialogTheme
@@ -127,7 +144,7 @@ class PaymentMethodActivity : AppCompatActivity(), CarDItemClickAdapter {
 //        }
 //
 //    }
-//
+
     override fun onItemDeleteClick(cardEntity: CardEntity) {
         cardViewModel.deleteCart(cardEntity)
         Toast.makeText(this,"Tarjeta eliminada", Toast.LENGTH_SHORT).show()

@@ -15,21 +15,18 @@ import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.amantoliv2.*
 import com.example.amantoliv2.Adapter.CategoryAdapter
 import com.example.amantoliv2.Adapter.CoverProductAdapter
-import com.example.amantoliv2.CategoryPottery
 
 import com.example.amantoliv2.Model.Category
 import com.example.amantoliv2.Model.Product
 
-import com.example.amantoliv2.R
-import com.example.amantoliv2.SettingsActivity
 import com.example.amantoliv2.databinding.FragmentHomeBinding
 import com.example.amantoliv2.databinding.FragmentShopBinding
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import java.io.IOException
-
 
 class ShopFragment : Fragment() {
 
@@ -39,8 +36,8 @@ class ShopFragment : Fragment() {
     lateinit var categoryAdapter: CategoryAdapter
     lateinit var coverProductAdapter: CoverProductAdapter
 
-    lateinit var cvCategoryPottery: CardView
-    lateinit var ivPottery: ImageView
+    //lateinit var cvCategoryPottery: CardView
+    //lateinit var ivPottery: ImageView
 
     @SuppressLint("MissingInflatedId")
     override fun onCreateView(
@@ -52,27 +49,57 @@ class ShopFragment : Fragment() {
         activity?.window?.addFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
 
         val coverRecView_shopFrag : RecyclerView = view.findViewById(R.id.coverRecView_shopFrag)
+
         val categoriesRecView : RelativeLayout = view.findViewById(R.id.categoriesRecView)
         val cvCategoryPottery: CardView = view.findViewById(R.id.cvCategoryPottery)
-        //val ivPottery: ImageView = view.findViewById(R.id.ivPottery)
+
         val ivPottery = view.findViewById<ImageView>(R.id.ivPottery)
+        val ivClothing = view.findViewById<ImageView>(R.id.ivClothing)
+        val ivJewelry = view.findViewById<ImageView>(R.id.ivJewelry)
+        val ivBags = view.findViewById<ImageView>(R.id.ivBags)
+        val ivPaintings = view.findViewById<ImageView>(R.id.ivPaintings)
+        val ivSculptures = view.findViewById<ImageView>(R.id.ivSculptures)
+        val ivToys = view.findViewById<ImageView>(R.id.ivToys)
+        val ivVarious = view.findViewById<ImageView>(R.id.ivVarious)
 
-        /*val bind = FragmentShopBinding.inflate(layoutInflater)
-
-        bind.cvCategoryPottery.setOnClickListener{
-            val intent = Intent (this@ShopFragment.requireContext(), CategoryPottery::class.java)
-            startActivity(intent)
-        }
-
-        val bind2 = FragmentHomeBinding.inflate(layoutInflater)
-
-        bind.ivPottery.setOnClickListener{
-            val intent = Intent (this@ShopFragment.requireContext(), CategoryPottery::class.java)
-            startActivity(intent)
-        }*/
-
+        //Abrir categoría Alfarería
         ivPottery.setOnClickListener {
             val intent = Intent(context, CategoryPottery::class.java)
+            startActivity(intent)
+        }
+        //Abrir categoría Ropa
+        ivClothing.setOnClickListener {
+            val intent = Intent(context, CategoryClothing::class.java)
+            startActivity(intent)
+        }
+        //Abrir categoría Joyería
+        ivJewelry.setOnClickListener {
+            val intent = Intent(context, CategoryJewelry::class.java)
+            startActivity(intent)
+        }
+        //Abrir categoría Bolsas
+        ivBags.setOnClickListener {
+            val intent = Intent(context, CategoryBags::class.java)
+            startActivity(intent)
+        }
+        //Abrir categoría Pinturas
+        ivPaintings.setOnClickListener {
+            val intent = Intent(context, CategoryPaintings::class.java)
+            startActivity(intent)
+        }
+        //Abrir categoría Esculturas
+        ivSculptures.setOnClickListener {
+            val intent = Intent(context, CategorySculptures::class.java)
+            startActivity(intent)
+        }
+        //Abrir categoría Juguetes
+        ivToys.setOnClickListener {
+            val intent = Intent(context, CategoryToys::class.java)
+            startActivity(intent)
+        }
+        //Abrir categoría Varios
+        ivVarious.setOnClickListener {
+            val intent = Intent(context, CategoryVariety::class.java)
             startActivity(intent)
         }
 
@@ -133,10 +160,6 @@ class ShopFragment : Fragment() {
         coverD.forEachIndexed { idx, person ->
             coverProduct.add(person)
         }
-
-    }
-
-    fun openCategory(){
 
     }
 

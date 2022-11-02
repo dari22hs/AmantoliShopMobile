@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.amantoliv2.Adapter.ProductAdapter
+import com.example.amantoliv2.Fragment.ProductReviewFragment
 import com.example.amantoliv2.Model.Product
 import com.example.amantoliv2.Utils.DefaultCard.GetDefCard
 import com.example.amantoliv2.Utils.Extensions.cardXXGen
@@ -76,6 +77,7 @@ class ProductDetailsActivity : AppCompatActivity() {
         backIv_ProfileFrag = findViewById(R.id.backIv_ProfileFrag)
         val addToCart_ProductDetailsPage: Button = findViewById(R.id.addToCart_ProductDetailsPage)
         val shippingAddress_productDetailsPage:LinearLayout = findViewById(R.id.shippingAddress_productDetailsPage)
+        val viewReviews_productDetailsPage:LinearLayout = findViewById(R.id.viewReviews_productDetailsPage)
         val cardNumberProduct_Details:TextView = findViewById(R.id.cardNumberProduct_Details)
 
         cardNumber = GetDefCard()
@@ -87,9 +89,14 @@ class ProductDetailsActivity : AppCompatActivity() {
             cardNumberProduct_Details.text = cardXXGen(cardNumber)
         }
 
-
+        //Abrir métodos de pago
         shippingAddress_productDetailsPage.setOnClickListener {
             startActivity(Intent(this,PaymentMethodActivity::class.java))
+        }
+
+        //Abrir reseñas
+        viewReviews_productDetailsPage.setOnClickListener {
+            startActivity(Intent(this, ProductReviewActivity::class.java))
         }
 
 
@@ -146,9 +153,9 @@ class ProductDetailsActivity : AppCompatActivity() {
 
             bottomSheetDialod.setContentView(bottomSheetView)
             bottomSheetDialod.show()
-        }
+        }//Fin addToCart
 
-    }
+    }//Fin onCreate
 
     private fun addProductToBag() {
 
@@ -159,7 +166,6 @@ class ProductDetailsActivity : AppCompatActivity() {
     }
 
     fun getJsonData(context: Context, fileName: String): String? {
-
 
         val jsonString: String
         try {

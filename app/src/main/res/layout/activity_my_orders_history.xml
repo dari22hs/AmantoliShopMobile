@@ -896,7 +896,7 @@
                             android:fontFamily="@font/metropolis_light"
                             android:textSize="14sp"
                             android:textAlignment="center"
-                            android:text="Alebrije coyote"/>
+                            android:text="Alebrije Coyote"/>
 
                     </androidx.cardview.widget.CardView>
 
@@ -968,7 +968,7 @@
                             android:fontFamily="@font/metropolis_light"
                             android:textSize="14sp"
                             android:textAlignment="center"
-                            android:text="El más cabrito"/>
+                            android:text="El Más Cabrito"/>
 
                     </androidx.cardview.widget.CardView>
 
@@ -1095,7 +1095,7 @@
                         <ImageView
                             android:layout_height="100dp"
                             android:layout_width="match_parent"
-                            android:scaleType="centerCrop"
+                            android:scaleType="fitXY"
                             app:cardCornerRadius="8dp"
                             android:src="@drawable/jarro_pez_sp13" />
 
@@ -1106,7 +1106,7 @@
                             android:fontFamily="@font/metropolis_light"
                             android:textSize="14sp"
                             android:textAlignment="center"
-                            android:text="Pez dormido"/>
+                            android:text="Pez Dormido"/>
 
                     </androidx.cardview.widget.CardView>
 
@@ -1270,17 +1270,16 @@
                             android:layout_width="match_parent"
                             android:scaleType="centerCrop"
                             app:cardCornerRadius="8dp"
-                            android:src="@drawable/category_sculptures" />
+                            android:src="@drawable/joy_collar_colorido" />
 
                         <TextView
-                            android:layout_marginStart="15dp"
-                            android:layout_marginEnd="15dp"
                             android:layout_marginTop="100dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/metropolis_light"
                             android:textSize="14sp"
-                            android:text="Producto 1"/>
+                            android:textAlignment="center"
+                            android:text="Collar de Vida"/>
 
                     </androidx.cardview.widget.CardView>
 
@@ -1294,17 +1293,16 @@
                             android:layout_width="match_parent"
                             android:scaleType="centerCrop"
                             app:cardCornerRadius="8dp"
-                            android:src="@drawable/category_sculptures" />
+                            android:src="@drawable/joy_collar_cactus" />
 
                         <TextView
-                            android:layout_marginStart="15dp"
-                            android:layout_marginEnd="15dp"
                             android:layout_marginTop="100dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/metropolis_light"
                             android:textSize="14sp"
-                            android:text="Producto 1"/>
+                            android:textAlignment="center"
+                            android:text="Corazón Cactus"/>
 
                     </androidx.cardview.widget.CardView>
 
@@ -1318,17 +1316,16 @@
                             android:layout_width="match_parent"
                             android:scaleType="centerCrop"
                             app:cardCornerRadius="8dp"
-                            android:src="@drawable/category_sculptures" />
+                            android:src="@drawable/bol_odiame_mas" />
 
                         <TextView
-                            android:layout_marginStart="15dp"
-                            android:layout_marginEnd="15dp"
                             android:layout_marginTop="100dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/metropolis_light"
                             android:textSize="14sp"
-                            android:text="Producto 1"/>
+                            android:textAlignment="center"
+                            android:text="Ódiame Más"/>
 
                     </androidx.cardview.widget.CardView>
 
@@ -1342,17 +1339,16 @@
                             android:layout_width="match_parent"
                             android:scaleType="centerCrop"
                             app:cardCornerRadius="8dp"
-                            android:src="@drawable/category_sculptures" />
+                            android:src="@drawable/bol_viva_la_vida" />
 
                         <TextView
-                            android:layout_marginStart="15dp"
-                            android:layout_marginEnd="15dp"
                             android:layout_marginTop="100dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/metropolis_light"
                             android:textSize="14sp"
-                            android:text="Producto 1"/>
+                            android:textAlignment="center"
+                            android:text="La Vida Loca"/>
 
                     </androidx.cardview.widget.CardView>
 
@@ -1366,17 +1362,16 @@
                             android:layout_width="match_parent"
                             android:scaleType="centerCrop"
                             app:cardCornerRadius="8dp"
-                            android:src="@drawable/category_sculptures" />
+                            android:src="@drawable/varios_buho_atrapador" />
 
                         <TextView
-                            android:layout_marginStart="15dp"
-                            android:layout_marginEnd="15dp"
                             android:layout_marginTop="100dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/metropolis_light"
                             android:textSize="14sp"
-                            android:text="Producto 1"/>
+                            android:textAlignment="center"
+                            android:text="Búho Soñador"/>
 
                     </androidx.cardview.widget.CardView>
 
@@ -1385,8 +1380,8 @@
             </HorizontalScrollView>
 
             <TextView
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
                 android:layout_marginTop="120dp"
                 android:textAlignment="center"
                 android:layout_width="match_parent"

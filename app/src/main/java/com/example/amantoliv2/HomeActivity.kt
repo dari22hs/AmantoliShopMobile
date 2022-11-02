@@ -57,3 +57,8 @@ class HomeActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         return false
     }
 }
+// TODO("PEDIDOS - RASTREAR PEDIDOS")
+// TODO("RESEÑAS")
+// TODO("TERMINAR PROCEDER AL PAGO")
+// TODO("SOBRE LA APP - TÉRMINOS Y CONDICIONES")
+// TODO("MODELADO 3D")

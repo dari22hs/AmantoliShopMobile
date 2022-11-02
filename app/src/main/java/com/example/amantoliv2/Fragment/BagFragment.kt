@@ -23,7 +23,6 @@ import com.example.amantoliv2.Adapter.CartItemClickAdapter
 
 import com.example.amantoliv2.R
 
-
 import com.example.amantoliv2.db.CartViewModel
 import com.example.amantoliv2.db.ProductEntity
 

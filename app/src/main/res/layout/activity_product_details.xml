@@ -186,7 +186,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5dp"
                             android:fontFamily="@font/metropolis_regular"
-                            android:text="Agregar a la bolsa"
+                            android:text="Ver mis tarjetas"
                             android:textColor="@color/textAd"
                             android:textSize="12sp" />
 
@@ -198,7 +198,9 @@
                         android:layout_marginLeft="10dp"
                         android:src="@drawable/ic_baseline_keyboard_arrow_right_24" />
                 </LinearLayout>
+
                 <LinearLayout
+                    android:id="@+id/viewReviews_productDetailsPage"
                     android:layout_marginTop="20dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -226,7 +228,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5dp"
                             android:fontFamily="@font/metropolis_regular"
-                            android:text=""
+                            android:text="Ver reseñas"
                             android:textSize="12sp" />
 
                     </LinearLayout>

@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Amantoli</string>
     <string name="new_product">New</string>
-    <string name="card_number">* * * * * * * * * * * * 9710</string>
+    <string name="card_number">4152  3138  2274  1000</string>
     <string name="card_holder_name">Cardholder</string>
     <string name="expiry_date">Expiration date</string>
     <string name="use_as_default_payment_method">Use method as default</string>

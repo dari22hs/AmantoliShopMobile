@@ -64,10 +64,7 @@ class PromoCodes : AppCompatActivity() {
     }
 
     private fun initData() {
-        TODO("COMPLETAR PERFIL - AGREGAR SUSCRIPCIONES")
-        TODO("PEDIDOS - RASTREAR PEDIDOS - TERMINAR SCROLL VIEW")
-        TODO("RESEÑAS")
-        TODO("TERMINAR PROCEDER AL PAGO")
-        TODO("SOBRE LA APP - TÉRMINOS Y CONDICIONES")
+
     }
+
 }

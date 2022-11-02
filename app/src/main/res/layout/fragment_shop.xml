@@ -152,6 +152,7 @@
                         app:cardCornerRadius="8dp">
 
                         <ImageView
+                            android:id="@+id/ivClothing"
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
                             android:scaleType="centerCrop"
@@ -190,6 +191,7 @@
                         android:layout_gravity="center_horizontal|center_vertical">
 
                         <ImageView
+                            android:id="@+id/ivJewelry"
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
                             android:scaleType="centerCrop"
@@ -231,6 +233,7 @@
                         android:layout_gravity="center_horizontal|center_vertical">
 
                         <ImageView
+                            android:id="@+id/ivBags"
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
                             android:scaleType="centerCrop"
@@ -271,6 +274,7 @@
                         android:layout_gravity="center_horizontal|center_vertical">
 
                         <ImageView
+                            android:id="@+id/ivPaintings"
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
                             android:scaleType="centerCrop"
@@ -310,6 +314,7 @@
                         android:layout_gravity="center_horizontal|center_vertical">
 
                         <ImageView
+                            android:id="@+id/ivSculptures"
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
                             android:scaleType="centerCrop"
@@ -349,6 +354,7 @@
                         android:layout_gravity="center_horizontal|center_vertical">
 
                         <ImageView
+                            android:id="@+id/ivToys"
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
                             app:cardCornerRadius="8dp"
@@ -389,6 +395,7 @@
                         android:layout_gravity="center_horizontal|center_vertical">
 
                         <ImageView
+                            android:id="@+id/ivVarious"
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
                             app:cardCornerRadius="8dp"
