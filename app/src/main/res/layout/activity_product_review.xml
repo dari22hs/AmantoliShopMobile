@@ -50,11 +50,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:layout_marginStart="5dp"
+        android:gravity="center"
         android:layout_marginEnd="5dp">
 
         <ImageView
             android:id="@+id/productImage_ProductReviewPage"
-            android:layout_width="300dp"
+            android:layout_width="match_parent"
             android:layout_height="300dp"
             android:scaleType="centerCrop"
             android:src="@drawable/escul_mini_y_nos"
@@ -268,7 +269,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Karina Montes"
+                    android:text="Miranda López"
                     android:textSize="14sp"
                     android:fontFamily="@font/metropolis_semibold"
                     android:textColor="@color/mainText"/>
@@ -283,7 +284,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Los améee"
+                        android:text="De locos !"
                         android:textSize="14sp"
                         android:fontFamily="@font/metropolis_bold"
                         android:textColor="@color/mainText"
@@ -311,7 +312,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Los iba a dar como regalo pero me encantaron y me los quedé jajaja. Ya pedí otros porque están preciosos los gatitos."
+                        android:text="Pensé que eran más chiquitos pero son del tamaño perfecto, están muy bien adornados :)"
                         android:textSize="14sp"
                         android:fontFamily="@font/metropolis_light"
                         android:textColor="@color/mainText"/>
