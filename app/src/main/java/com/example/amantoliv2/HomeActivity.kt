@@ -20,7 +20,6 @@ class HomeActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         supportFragmentManager.beginTransaction().replace(R.id.nav_fragment, HomeFragment() ).commit()
     }
 
-
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.homeMenu -> {
@@ -57,8 +56,7 @@ class HomeActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         return false
     }
 }
-// TODO("PEDIDOS - RASTREAR PEDIDOS")
-// TODO("RESEÑAS")
+// TODO("AGREGAR A FAVORITOS)
 // TODO("TERMINAR PROCEDER AL PAGO")
-// TODO("SOBRE LA APP - TÉRMINOS Y CONDICIONES")
 // TODO("MODELADO 3D")
+// TODO("SOBRE LA APP - TÉRMINOS Y CONDICIONES")

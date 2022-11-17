@@ -23,8 +23,6 @@ import java.io.IOException
 
 class VisualSearchActivity : AppCompatActivity() {
 
-
-    //Our constants
     private val OPERATION_CAPTURE_PHOTO = 1
     private val OPERATION_CHOOSE_PHOTO = 2
 
@@ -64,6 +62,7 @@ class VisualSearchActivity : AppCompatActivity() {
          bottomSheetView = LayoutInflater.from(applicationContext).inflate(
             R.layout.visual_predict,
             findViewById<ConstraintLayout>(R.id.visualBottomSheet)
+         //Checar id de componente
         )
 
 
@@ -75,6 +74,7 @@ class VisualSearchActivity : AppCompatActivity() {
         uploadAPhotoBtn_visualSearch.setBackgroundColor(Color.TRANSPARENT)
 
         takeAPhotoBtn_visualSearch.setOnClickListener {
+            //Proceso para tomar foto aquí
 
         }
 

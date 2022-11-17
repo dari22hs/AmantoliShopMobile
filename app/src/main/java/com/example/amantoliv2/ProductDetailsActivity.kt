@@ -41,8 +41,6 @@ class ProductDetailsActivity : AppCompatActivity() {
     lateinit var RatingProductDetails: TextView
     lateinit var productRating_singleProduct: RatingBar
 
-
-
     lateinit var RecomRecView_ProductDetailsPage: RecyclerView
     lateinit var newProductAdapter: ProductAdapter
     lateinit var newProduct: ArrayList<Product>
@@ -61,7 +59,6 @@ class ProductDetailsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_product_details)
 
         getWindow()?.addFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
-
 
         productIndex = intent.getIntExtra("ProductIndex", -1)
         ProductFrom = intent.getStringExtra("ProductFrom").toString()
@@ -91,7 +88,7 @@ class ProductDetailsActivity : AppCompatActivity() {
 
         //Abrir métodos de pago
         shippingAddress_productDetailsPage.setOnClickListener {
-            startActivity(Intent(this,PaymentMethodActivity::class.java))
+            startActivity(Intent(this,AugmentedRealityActivity::class.java))
         }
 
         //Abrir reseñas

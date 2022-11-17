@@ -146,7 +146,7 @@ class LoginActivity : AppCompatActivity() {
 
         signInPassword = passEt.text.toString().trim()
 
-            firebaseAuth.signInWithEmailAndPassword(signInEmail, signInPassword)
+        firebaseAuth.signInWithEmailAndPassword(signInEmail, signInPassword)
                 .addOnCompleteListener { signIn ->
                     if (signIn.isSuccessful) {
 

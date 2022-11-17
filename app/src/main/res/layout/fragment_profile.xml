@@ -30,7 +30,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/metropolis_regular"
-            android:text="Mi perfil"
+            android:text="@string/mi_perfil"
             android:textColor="@color/mainText"
             android:textSize="23sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -88,7 +88,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/metropolis_regular"
-                    android:text="Nombre"
+                    android:text="@string/nombre"
                     android:textColor="@color/mainText"
                     android:textSize="18sp" />
 
@@ -97,7 +97,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/metropolis_regular"
-                    android:text="Correo electrónico"
+                    android:text="@string/correo_electr_nico"
                     android:textColor="@color/textAd"
                     android:textSize="14sp" />
 
@@ -154,7 +154,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/metropolis_regular"
-                        android:text="Mis pedidos"
+                        android:text="@string/mis_pedidos"
                         android:textColor="@color/mainText"
                         android:textSize="16sp" />
 
@@ -163,7 +163,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:fontFamily="@font/metropolis_regular"
-                        android:text="Historial de pedidos"
+                        android:text="@string/historial_de_pedidos"
                         android:textColor="@color/textAd"
                         android:textSize="12sp" />
 
@@ -206,7 +206,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/metropolis_regular"
-                        android:text="Direcciones de envío"
+                        android:text="@string/direcciones_de_env_o"
                         android:textColor="@color/mainText"
                         android:textSize="16sp" />
 
@@ -215,7 +215,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:fontFamily="@font/metropolis_regular"
-                        android:text="Gestionar mis direcciones"
+                        android:text="@string/gestionar_mis_direcciones"
                         android:textColor="@color/textAd"
                         android:textSize="12sp" />
 
@@ -259,7 +259,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/metropolis_regular"
-                        android:text="Métodos de pago"
+                        android:text="@string/m_todos_de_pago"
                         android:textColor="@color/mainText"
                         android:textSize="16sp" />
 
@@ -268,9 +268,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
+                        android:text="@string/administrar_mis_m_todos_de_pago"
                         android:fontFamily="@font/metropolis_regular"
                         android:textColor="@color/textAd"
-                        android:text="Administrar mis métodos de pago"
                         android:textSize="12sp" />
 
                 </LinearLayout>
@@ -312,7 +312,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/metropolis_regular"
-                        android:text="Códigos promocionales"
+                        android:text="@string/c_digos_promocionales"
                         android:textColor="@color/mainText"
                         android:textSize="16sp" />
 
@@ -322,7 +322,7 @@
                         android:layout_marginTop="5dp"
                         android:fontFamily="@font/metropolis_regular"
                         android:textColor="@color/textAd"
-                        android:text="Canjear códigos promocionales"
+                        android:text="@string/canjear_c_digos_promocionales"
                         android:textSize="12sp" />
 
                 </LinearLayout>
@@ -365,7 +365,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/metropolis_regular"
-                        android:text="Configuración"
+                        android:text="@string/configuraci_n_profile_fragment"
                         android:textColor="@color/mainText"
                         android:textSize="16sp" />
 
@@ -375,7 +375,7 @@
                         android:layout_marginTop="5dp"
                         android:fontFamily="@font/metropolis_regular"
                         android:textColor="@color/textAd"
-                        android:text="Notificaciones, contraseña, idioma y más"
+                        android:text="@string/notificaciones_contrase_a_idioma_y_m_s"
                         android:textSize="12sp" />
 
                 </LinearLayout>

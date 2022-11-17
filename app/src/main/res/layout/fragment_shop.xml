@@ -42,7 +42,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:fontFamily="@font/metropolis_semibold"
-                    android:text="Categorías"
+                    android:text="@string/categor_as"
                     android:textColor="@color/mainText"
                     android:textSize="25sp" />
 
@@ -57,7 +57,7 @@
                     android:layout_height="match_parent"
                     android:fontFamily="@font/metropolis_regular"
                     android:gravity="center"
-                    android:text="Gran variedad"
+                    android:text="@string/gran_variedad"
                     android:textColor="@color/mainText"
                     android:textSize="12sp" />
             </LinearLayout>
@@ -121,7 +121,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Alfarería"
+                            android:text="@string/alfarer_a"
                             android:textAlignment="center"
                             android:fontFamily="@font/metropolis_bold"
                             android:textColor="@color/mainText" />
@@ -161,7 +161,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Ropa"
+                            android:text="@string/ropa"
                             android:textAlignment="center"
                             android:fontFamily="@font/metropolis_bold"
                             android:textColor="@color/mainText" />
@@ -200,7 +200,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Joyería"
+                            android:text="@string/joyer_a"
                             app:cardCornerRadius="8dp"
                             android:textAlignment="center"
                             android:fontFamily="@font/metropolis_bold"
@@ -242,7 +242,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Bolsas"
+                            android:text="@string/bolsas"
                             android:textAlignment="center"
                             android:fontFamily="@font/metropolis_bold"
                             android:textColor="@color/mainText" />
@@ -283,7 +283,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Pinturas"
+                            android:text="@string/pinturas"
                             android:textAlignment="center"
                             android:fontFamily="@font/metropolis_bold"
                             android:textColor="@color/mainText" />
@@ -322,7 +322,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Esculturas"
+                            android:text="@string/esculturas"
                             android:textAlignment="center"
                             android:fontFamily="@font/metropolis_bold"
                             android:textColor="@color/mainText" />
@@ -363,7 +363,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Juguetes"
+                            android:text="@string/juguetes"
                             android:textAlignment="center"
                             android:fontFamily="@font/metropolis_bold"
                             android:textColor="@color/mainText" />
@@ -404,7 +404,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Varios"
+                            android:text="@string/varios"
                             android:textAlignment="center"
                             android:fontFamily="@font/metropolis_bold"
                             android:textColor="@color/mainText" />

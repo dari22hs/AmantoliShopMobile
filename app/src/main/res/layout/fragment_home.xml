@@ -52,7 +52,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:fontFamily="@font/metropolis_semibold"
-                        android:text="Lo más reciente"
+                        android:text="@string/lo_m_s_reciente"
                         android:textColor="@color/mainText"
                         android:textSize="25sp" />
 
@@ -67,7 +67,7 @@
                         android:layout_height="match_parent"
                         android:fontFamily="@font/metropolis_regular"
                         android:gravity="center"
-                        android:text="Ver más"
+                        android:text="@string/ver_m_s"
                         android:textColor="@color/mainText"
                         android:textSize="12sp" />
 
@@ -80,7 +80,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:fontFamily="@font/metropolis_regular"
-                    android:text="Nuevos productos en Amantoli"
+                    android:text="@string/nuevos_productos_en_amantoli"
                     android:textColor="@color/textAd"
                     android:textSize="11sp" />
 
@@ -103,9 +103,7 @@
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/newLayout"
-
-            >
+            app:layout_constraintTop_toBottomOf="@+id/newLayout">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -126,7 +124,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:fontFamily="@font/metropolis_semibold"
-                        android:text="¡A la venta ya!"
+                        android:text="@string/a_la_venta_ya"
                         android:textColor="@color/mainText"
                         android:textSize="25sp" />
 
@@ -141,7 +139,7 @@
                         android:layout_height="match_parent"
                         android:fontFamily="@font/metropolis_regular"
                         android:gravity="center"
-                        android:text="Ver más"
+                        android:text="@string/ver_m_s"
                         android:textColor="@color/mainText"
                         android:textSize="12sp" />
 
@@ -154,7 +152,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:fontFamily="@font/metropolis_regular"
-                    android:text="Contenido promocionado en Amantoli"
+                    android:text="@string/contenido_promocionado_en_amantoli"
                     android:textColor="@color/textAd"
                     android:textSize="11sp" />
 
@@ -191,6 +189,5 @@
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 </ScrollView>

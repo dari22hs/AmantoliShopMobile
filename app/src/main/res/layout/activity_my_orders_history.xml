@@ -26,8 +26,7 @@
             android:layout_height="20dp"
             android:layout_gravity="center"
             android:src="@drawable/ic_back"
-            app:tint="@color/mainText"
-            />
+            app:tint="@color/mainText" />
 
         <TextView
             android:id="@+id/textViewPromos"
@@ -37,7 +36,7 @@
             android:layout_weight="1"
             android:fontFamily="@font/metropolis_regular"
             android:gravity="center"
-            android:text="PEDIDOS Y DEVOLUCIONES"
+            android:text="@string/pedidos_y_devoluciones"
             android:textColor="@color/mainText"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -61,6 +60,7 @@
                 android:id="@+id/cardViewOrders"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/background"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 android:layout_marginTop="20dp">
 
@@ -69,13 +69,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
+                    android:background="@drawable/bg_options"
                     android:padding="8dp">
 
                     <TextView
                         android:id="@+id/tvExpandOrders"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Pedidos"
+                        android:text="@string/pedidos"
                         android:fontFamily="@font/metropolis_semibold"
                         android:textSize="18sp"
                         android:textColor="@color/mainText"/>
@@ -96,7 +97,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Pedido #3-LG    Pendiente de envío"
+                                android:text="@string/pedido_3_lg_pendiente_de_env_o"
                                 android:fontFamily="@font/metropolis_regular"
                                 android:textColor="@color/mainText" />
 
@@ -118,7 +119,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Artículo"
+                                android:text="@string/art_culo"
                                 android:layout_marginStart="20dp"
                                 android:textSize="12sp"
                                 android:fontFamily="@font/metropolis_light"
@@ -128,7 +129,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="120dp"
-                                android:text="Cantidad"
+                                android:text="@string/cantidad"
                                 android:fontFamily="@font/metropolis_light"
                                 android:textSize="12sp"
                                 android:textColor="@color/mainText"/>
@@ -140,7 +141,7 @@
                                 android:fontFamily="@font/metropolis_light"
                                 android:textSize="12sp"
                                 android:textColor="@color/mainText"
-                                android:text="Total"/>
+                                android:text="@string/total"/>
 
                         </LinearLayout>
 
@@ -221,7 +222,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:layout_marginStart="90dp"
-                                android:text="2"
+                                android:text="1"
                                 android:textColor="@color/mainText"
                                 android:textSize="14sp"
                                 android:fontFamily="@font/metropolis_regular" />
@@ -230,7 +231,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="76dp"
-                                android:text="$800"
+                                android:text="$2,800"
                                 android:textColor="@color/mainText"
                                 android:textSize="14sp"
                                 android:fontFamily="@font/metropolis_regular"/>
@@ -296,7 +297,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="10dp"
-                                android:text="Rastrear pedido"
+                                android:text="@string/rastrear_pedido"
                                 android:textSize="14sp"
                                 android:textColor="@color/mainText"
                                 android:fontFamily="@font/metropolis_regular"/>
@@ -323,7 +324,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="175dp"
-                                android:text="Total del pedido: $9,300"
+                                android:text="@string/total_del_pedido_11_300"
                                 android:textSize="14sp"
                                 android:textColor="@color/mainText"
                                 android:fontFamily="@font/metropolis_regular"/>
@@ -348,7 +349,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Pedido #2-LG    Entregado"
+                                android:text="@string/pedido_2_lg_entregado"
                                 android:fontFamily="@font/metropolis_regular"
                                 android:textColor="@color/mainText" />
 
@@ -364,7 +365,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Artículo"
+                                android:text="@string/art_culo"
                                 android:layout_marginStart="20dp"
                                 android:textSize="12sp"
                                 android:fontFamily="@font/metropolis_light"
@@ -374,7 +375,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="120dp"
-                                android:text="Cantidad"
+                                android:text="@string/cantidad"
                                 android:fontFamily="@font/metropolis_light"
                                 android:textSize="12sp"
                                 android:textColor="@color/mainText"/>
@@ -433,7 +434,7 @@
                                 android:textSize="14sp"
                                 android:textColor="@color/mainText"
                                 android:fontFamily="@font/metropolis_regular"
-                                android:text="$2,400"/>
+                                android:text="$900"/>
 
                         </LinearLayout>
 
@@ -497,7 +498,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="10dp"
-                                android:text="Rastrear pedido"
+                                android:text="@string/_16_11_2022"
                                 android:textSize="14sp"
                                 android:textColor="@color/mainText"
                                 android:fontFamily="@font/metropolis_regular"/>
@@ -506,7 +507,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="130dp"
-                                android:text="Envío: $200"
+                                android:text="@string/env_o_200"
                                 android:textSize="14sp"
                                 android:textColor="@color/mainText"
                                 android:fontFamily="@font/metropolis_regular"/>
@@ -524,7 +525,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="175dp"
-                                android:text="Total del pedido: $4,800"
+                                android:text="Total del pedido: $3,300"
                                 android:textSize="14sp"
                                 android:textColor="@color/mainText"
                                 android:fontFamily="@font/metropolis_regular"/>
@@ -547,7 +548,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Pedido #1-LG    Entregado"
+                                android:text="@string/pedido_1_lg_entregado"
                                 android:fontFamily="@font/metropolis_regular"
                                 android:textColor="@color/mainText" />
 
@@ -584,7 +585,7 @@
                                 android:fontFamily="@font/metropolis_light"
                                 android:textSize="12sp"
                                 android:textColor="@color/mainText"
-                                android:text="Total"/>
+                                android:text="@string/total"/>
 
                         </LinearLayout>
 
@@ -646,7 +647,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="10dp"
-                                android:text="Rastrear pedido"
+                                android:text="12/11/22"
                                 android:textSize="14sp"
                                 android:textColor="@color/mainText"
                                 android:fontFamily="@font/metropolis_regular"/>
@@ -655,7 +656,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="130dp"
-                                android:text="Envío: $200"
+                                android:text="@string/env_o_200"
                                 android:textSize="14sp"
                                 android:textColor="@color/mainText"
                                 android:fontFamily="@font/metropolis_regular"/>
@@ -673,7 +674,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="175dp"
-                                android:text="Total del pedido: $1,150"
+                                android:text="@string/total_del_pedido_1_150"
                                 android:textSize="14sp"
                                 android:textColor="@color/mainText"
                                 android:fontFamily="@font/metropolis_regular"/>
@@ -692,6 +693,7 @@
                 android:id="@+id/cardViewDevol"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/background"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 android:layout_marginTop="30dp">
 
@@ -699,12 +701,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
+                    android:background="@drawable/bg_options"
                     android:padding="8dp">
                     <TextView
                         android:id="@+id/tvExpandDevol"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Devoluciones"
+                        android:text="@string/devoluciones"
                         android:fontFamily="@font/metropolis_semibold"
                         android:textSize="18sp"
                         android:textColor="@color/mainText"/>
@@ -724,7 +727,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Pedido #0-LG    Devolución completa"
+                                android:text="@string/pedido_0_lg_devoluci_n_completa"
                                 android:fontFamily="@font/metropolis_regular"
                                 android:textColor="@color/mainText" />
 
@@ -830,7 +833,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="175dp"
-                                android:text="Total del pedido: $1,100"
+                                android:text="@string/total_del_pedido_1_100"
                                 android:textSize="14sp"
                                 android:textColor="@color/mainText"
                                 android:fontFamily="@font/metropolis_regular"/>
@@ -859,7 +862,7 @@
                     android:textSize="16sp"
                     android:fontFamily="@font/metropolis_regular"
                     android:textColor="@color/mainText"
-                    android:text="Podría gustarte"/>
+                    android:text="@string/podr_a_gustarte"/>
 
             </LinearLayout>
 
@@ -1128,7 +1131,7 @@
                     android:textSize="16sp"
                     android:fontFamily="@font/metropolis_regular"
                     android:textColor="@color/mainText"
-                    android:text="Historial de productos buscados"/>
+                    android:text="@string/historial_de_productos_buscados"/>
 
             </LinearLayout>
 
@@ -1388,7 +1391,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="14sp"
                 android:fontFamily="@font/metropolis_light"
-                android:text="Derechos reservados 2022 \@Nextia Solutions MX"/>
+                android:text="@string/derechos_reservados_2022_nextia_solutions_mx"/>
 
         </LinearLayout>
 

@@ -1,46 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/background"
-    tools:context=".Fragment.FavFragment">
+    tools:context=".Fragment.BagFragment"
+    android:background="@color/background">
 
-    <LinearLayout
-        android:gravity="center"
-        android:id="@+id/emptyBagMsgLayout"
-        android:orientation="vertical"
+
+    <TextView
+        android:id="@+id/tvMyFavsFragment"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/metropolis_regular"
+        android:text="Mis favoritos"
+        android:textColor="@color/mainText"
+        android:textSize="23sp"
+        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <!--Cambiar a lottie-->
+    <LinearLayout
+        android:id="@+id/llFav1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="70dp"
+        android:visibility="visible"
+        android:layout_marginHorizontal="10dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/juegos_set_trompos"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set de Trompos"
+                android:textSize="18sp"
+                android:textColor="@color/mainText"
+                android:fontFamily="@font/metropolis_semibold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Juego de 6 trompos de madera"
+                android:textSize="18sp"
+                android:textColor="@color/mainText"
+                android:fontFamily="@font/metropolis_regular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$270"
+                android:textSize="18sp"
+                android:textColor="@color/mainText"
+                android:fontFamily="@font/metropolis_regular"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnRemoveFromFavs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_bg_4"
+                android:text="QUITAR DE FAVORITOS"
+                android:textColor="@color/white"
+                android:fontFamily="@font/metropolis_regular"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/emptyFavsLayout"
+        android:orientation="vertical"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_marginTop="250dp"
+        android:layout_marginHorizontal="80dp">
+
+        <!--Comentar el Lottie para ver la activity-->
         <com.airbnb.lottie.LottieAnimationView
-            android:scaleType="fitCenter"
-            android:id="@+id/animationViewFavPage"
+            android:id="@+id/animationFavsFragment"
             android:layout_width="match_parent"
             android:layout_height="250dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            android:scaleType="centerCrop"
             app:lottie_rawRes="@raw/empty_fav" />
 
         <TextView
             android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/empty_favourite"
+            android:text="¡No hay favoritos!"
             android:textColor="@color/textAd"
             android:fontFamily="@font/metropolis_semibold"
-            android:textSize="26sp"
-            >
+            android:textSize="25sp">
 
         </TextView>
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

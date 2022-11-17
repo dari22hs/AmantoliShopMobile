@@ -38,7 +38,7 @@
             android:layout_marginBottom="10dp"
             android:fontFamily="@font/metropolis_regular"
             android:maxLines="2"
-            android:text="Lo mejor solo en Amantoli"
+            android:text="@string/lo_mejor_solo_en_amantoli"
             android:textColor="@color/mainText"
             android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="parent"

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Amantoli</string>
+    <string name="new_product">New</string>
+    <string name="card_number">4152  3138  2274  1000</string>
+    <string name="card_holder_name">Cardholder</string>
+    <string name="expiry_date">Expiration date</string>
+    <string name="use_as_default_payment_method">Use method as default</string>
+    <string name="payment_methods">Payment methods</string>
+    <string name="add_new_card">Add new card</string>
+    <string name="add_card">Add</string>
+    <string name="empty_favourite">¡No favs added!</string>
+    <string name="add_to_bag">Add to bag</string>
+    <string name="card_number_star">**** **** **** ****</string>
+    <string name="configuraci_n">Settings</string>
+    <string name="notificaciones">Notifications</string>
+    <string name="promociones_y_cupones">Promos and cupons</string>
+    <string name="informaci_n_sobre_mis_pedidos">Information about my orders</string>
+    <string name="disponibilidad_de_productos">Product availability</string>
+    <string name="beneficios">Benefits</string>
+    <string name="usted_a_n_no_cuenta_con_los_grandes_beneficios_de_una_cuenta_amantoli_pro_n_nrevise_las_opciones_que_tenemos_para_usted">You don\'t have the great benefits of an Amantoli Pro account.\n\nCheck out the options we have for you.</string>
+    <string name="quiero_ser_pro">¡I want to be Pro!</string>
+    <string name="idioma">Language</string>
+    <string name="espa_ol">Español</string>
+    <string name="english">English</string>
+    <string name="modo_de_aplicaci_n">App mode</string>
+    <!--Menu bottom bar-->
+    <string name="inicio">Home</string>
+    <string name="tienda">Shop</string>
+    <string name="bolsa">Bag</string>
+    <string name="favoritos">Favorites</string>
+    <string name="perfil">Profile</string>
+    <!--Menu bottom bar-->
+
+    <!--Fragment profile options-->
+    <string name="mi_perfil">My profile</string>
+    <string name="nombre">Name</string>
+    <string name="correo_electr_nico">Email</string>
+    <string name="mis_pedidos">My orders</string>
+    <string name="direcciones_de_env_o">Shipping addresses</string>
+    <string name="gestionar_mis_direcciones">Manage my addresses</string>
+    <string name="m_todos_de_pago">Payment methods</string>
+    <string name="administrar_mis_m_todos_de_pago">Manage my cards</string>
+    <string name="c_digos_promocionales">Promotional codes</string>
+    <string name="canjear_c_digos_promocionales">Redeem promo codes</string>
+    <string name="configuraci_n_profile_fragment">Settings</string>
+    <string name="notificaciones_contrase_a_idioma_y_m_s">Notifications, password, language and more</string>
+
+    <string name="pedidos_y_devoluciones">RETURNS &amp; ORDERS</string>
+    <string name="pedidos">Orders</string>
+    <string name="devoluciones">Returns</string>
+    <string name="podr_a_gustarte">You might like</string>
+    <string name="historial_de_productos_buscados">Browsed products history</string>
+    <string name="derechos_reservados_2022_nextia_solutions_mx">All rights reserved 2022 @Nextia Solutions MX</string>
+    <string name="pedido_3_lg_pendiente_de_env_o">Order #3-LG Pending shipment</string>
+    <string name="art_culo">Item</string>
+    <string name="cantidad">Quantity</string>
+    <string name="total">Total</string>
+    <string name="rastrear_pedido">Track order</string>
+    <string name="total_del_pedido_11_300">Order total: $11,300</string>
+    <string name="pedido_2_lg_entregado">Order #2-LG Delivered</string>
+    <string name="_16_11_2022">16/11/2022</string>
+    <string name="env_o_200">Shipment: $200</string>
+    <string name="pedido_1_lg_entregado">Order #1-LG Delivered</string>
+    <string name="total_del_pedido_1_150">Order total: $1,150</string>
+    <string name="pedido_0_lg_devoluci_n_completa">Order #0-LG Return complete</string>
+    <string name="total_del_pedido_1_100">Order total: $1,100</string>
+    <string name="historial_de_pedidos">Orders history</string>
+    <string name="promociones">PROMOCIONES</string>
+    <string name="agregue_un_c_digo_promocional">AGREGUE UN CÓDIGO PROMOCIONAL</string>
+    <string name="introduce_el_c_digo">Introduce el código</string>
+    <string name="agregar">AGREGAR</string>
+    <string name="mis_c_digos">Mis códigos</string>
+    <string name="direcciones_de_env_o_activity">Direcciones de envío</string>
+    <string name="direcci_n_1_trabajo">Dirección #1 - Trabajo</string>
+    <string name="predeterminada">Predeterminada</string>
+    <string name="direcci_n_2_casa">Dirección #2 - Casa</string>
+    <string name="agregar_direcci_n">AGREGAR DIRECCIÓN</string>
+    <string name="nombre_clave">Nombre clave</string>
+    <string name="calle_y_n_mero">Calle y número</string>
+    <string name="colonia_y_c_digo_postal">Colonia y código postal</string>
+    <string name="ciudad_y_estado">Ciudad y estado</string>
+    <string name="categor_as">Categorías</string>
+    <string name="gran_variedad">Gran variedad</string>
+    <string name="alfarer_a">Alfarería</string>
+    <string name="ropa">Ropa</string>
+    <string name="joyer_a">Joyería</string>
+    <string name="bolsas">Bolsas</string>
+    <string name="pinturas">Pinturas</string>
+    <string name="esculturas">Esculturas</string>
+    <string name="juguetes">Juguetes</string>
+    <string name="varios">Varios</string>
+    <string name="ver">VER</string>
+    <string name="el_mejor_arte_solo_en_amantoli">El mejor arte solo en Amantoli</string>
+    <string name="lo_mejor_solo_en_amantoli">Lo mejor solo en Amantoli</string>
+    <string name="lo_m_s_reciente">Lo más reciente</string>
+    <string name="ver_m_s">Ver más</string>
+    <string name="nuevos_productos_en_amantoli">Nuevos productos en Amantoli</string>
+    <string name="a_la_venta_ya">¡A la venta ya!</string>
+    <string name="contenido_promocionado_en_amantoli">Contenido promocionado en Amantoli</string>
+    <string name="tomar_foto">Tomar foto</string>
+    <string name="subir_foto">Subir foto</string>
+    <string name="tome_o_suba_una_foto_para_buscar_objetos_similares">Tome o suba una foto para buscar objetos similares</string>
+    <string name="b_squeda_visual">Búsqueda visual</string>
+
+</resources>

@@ -36,7 +36,7 @@
             android:layout_weight="1"
             android:fontFamily="@font/metropolis_regular"
             android:gravity="center"
-            android:text="PROMOCIONES"
+            android:text="@string/promociones"
             android:textColor="@color/mainText"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -69,7 +69,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_gravity="center"
-            android:text="AGREGUE UN CÓDIGO PROMOCIONAL"
+            android:text="@string/agregue_un_c_digo_promocional"
             android:fontFamily="@font/metropolis_regular"
             android:textColor="@color/mainText"
             android:textSize="16sp"/>
@@ -99,7 +99,7 @@
             app:boxCornerRadiusTopEnd="10dp"
             app:boxCornerRadiusBottomStart="10dp"
             app:boxCornerRadiusBottomEnd="10dp"
-            android:hint="Introduce el código"
+            android:hint="@string/introduce_el_c_digo"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:textColor="@color/mainText"
             android:fontFamily="@font/metropolis_light"
@@ -114,11 +114,12 @@
                 android:inputType="text"/>
 
         </com.google.android.material.textfield.TextInputLayout>
+
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:text="AGREGAR"
+            android:text="@string/agregar"
             android:textColor="@color/white"
             android:fontFamily="@font/metropolis_bold"
             android:background="@drawable/btn_bg_4"/>
@@ -128,6 +129,7 @@
         android:id="@+id/cardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/background"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:layout_marginTop="420dp">
 
@@ -136,13 +138,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:background="@drawable/bg_options"
             android:padding="8dp">
 
             <TextView
                 android:id="@+id/tvExpand"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Mis códigos"
+                android:text="@string/mis_c_digos"
                 android:fontFamily="@font/metropolis_regular"
                 android:textSize="18sp"
                 android:textColor="@color/mainText"/>
@@ -157,7 +160,7 @@
                     android:id="@+id/tvCodeOne"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="SPOOKY2022 - USADO"
+                    android:text="SPOOKY2022 - USADO (10%)"
                     android:fontFamily="@font/metropolis_regular"
                     android:textSize="16sp"
                     android:textColor="@color/mainText"
@@ -167,7 +170,7 @@
                     android:id="@+id/tvCodeTwo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="DOTD2022 - USADO"
+                    android:text="DOTD2022 - USADO ($50)"
                     android:fontFamily="@font/metropolis_regular"
                     android:textSize="16sp"
                     android:textColor="@color/mainText"
@@ -178,7 +181,7 @@
                     android:id="@+id/tvCodeThree"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="REVO22 - SIN USAR"
+                    android:text="REVO22 - SIN USAR ($50)"
                     android:fontFamily="@font/metropolis_regular"
                     android:textSize="16sp"
                     android:textColor="@color/mainText"

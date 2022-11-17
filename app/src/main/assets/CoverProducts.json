@@ -10,7 +10,7 @@
   "productBrand": "Arte Gaia",
   "productImage": "https://i.pinimg.com/564x/62/b2/c1/62b2c1bcde0a94d5aa37d634a5dc928e.jpg",
   "productCategory": "Alfarería",
-  "productNote": "Lo nuevo de Gaia"
+  "productNote": "Mini y Nos"
   },
   {
   "productName": "Amanecer italiano",
@@ -23,7 +23,7 @@
   "productBrand": "MIRO pinturas",
   "productImage": "https://i.pinimg.com/564x/8f/fe/51/8ffe51505548fecc656e720fe493330f.jpg",
   "productCategory": "Pinturas",
-  "productNote": "MIRO pinturas"
+  "productNote": "MIRO Pinturas"
   },
   {
     "productName": "Jarrón multicapa",
@@ -50,5 +50,18 @@
     "productImage": "https://i.pinimg.com/564x/64/62/75/646275e0befe1f1027e676a9735687a4.jpg",
     "productCategory": "Alfarería",
     "productNote": "TonaYork"
+  },
+  {
+    "productName": "El Renacer",
+    "productId": "5",
+    "productPrice": "690",
+    "productDes": "Jarrón que representa la metamorfosis en la vida. Hecho con materiales duraderos\n\nPeso: 6.4 kg.\n\nAltura: 70 cm.\n\n\n\n",
+    "productRating": 4.9,
+    "productDisCount": "5%",
+    "productHave": true,
+    "productBrand": "TonaYork",
+    "productImage": "https://i.pinimg.com/564x/6a/07/d7/6a07d75645af62f84c5fc57e13951718.jpg",
+    "productCategory": "Alfarería",
+    "productNote": "El Renacer"
   }
 ]

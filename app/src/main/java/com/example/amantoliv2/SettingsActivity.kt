@@ -1,16 +1,11 @@
 package com.example.amantoliv2
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
+import android.content.res.Configuration
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
-import android.view.View
 import android.widget.*
-import androidx.viewpager.widget.ViewPager
+import androidx.appcompat.app.AppCompatActivity
 import com.airbnb.lottie.LottieAnimationView
-import com.example.amantoliv2.Utils.Extensions.toast
-import com.google.android.material.tabs.TabLayout
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
@@ -19,6 +14,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.tasks.await
 import kotlinx.coroutines.withContext
+import java.util.*
 
 
 class SettingsActivity : AppCompatActivity() {
@@ -29,6 +25,9 @@ class SettingsActivity : AppCompatActivity() {
     lateinit var animationView: LottieAnimationView
     var isChecked = true
     var isBoxChecked = true
+    var isSwitchOn = false
+    lateinit var radioButton2: RadioButton
+
 
     private val userCollectionRef = Firebase.firestore.collection("Users")
     val firebaseAuth: FirebaseAuth = FirebaseAuth.getInstance()
@@ -42,9 +41,10 @@ class SettingsActivity : AppCompatActivity() {
         //nameEt_SettingsPage = findViewById(R.id.nameEt_SettingsPage)
         //EmailEt_SettingsPage = findViewById(R.id.EmailEt_SettingsPage)
         //saveSetting_SettingsBtn = findViewById(R.id.saveSetting_SettingsBtn)
+        radioButton2 = findViewById(R.id.radioButton2)
         val backIv_ProfileFrag:ImageView = findViewById(R.id.backIv_ProfileFrag)
 
-        var checkAnim = findViewById<LottieAnimationView>(R.id.animationViewAppMode)
+        var animationViewAppMode = findViewById<LottieAnimationView>(R.id.animationViewAppMode)
         var chkb1 = findViewById<CheckBox>(R.id.chkb1)
 
         val llProAccount = findViewById<LinearLayout>(R.id.llProAccount)
@@ -54,19 +54,33 @@ class SettingsActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-
-        checkAnim.setOnClickListener{
+        /*animationViewAppMode.setOnClickListener{
             if (isChecked){
-                checkAnim.speed = -1f
-                checkAnim.playAnimation()
+                animationViewAppMode.speed = -1f
+                animationViewAppMode.playAnimation()
                 isChecked = false
             }else{
-                checkAnim.speed = -1f
-                checkAnim.playAnimation()
+                animationViewAppMode.speed = -1f
+                animationViewAppMode.playAnimation()
                 isChecked = false
-                checkAnim.pauseAnimation()
+                animationViewAppMode.pauseAnimation()
             }//Fin else
-        }//Fin setOnClickListener
+        }//Fin setOnClickListener*/
+
+        animationViewAppMode.speed = 34.0E37f
+        animationViewAppMode.setOnClickListener {
+            isSwitchOn = if(isSwitchOn){
+                animationViewAppMode.setMinAndMaxProgress(1.0f, 1.0f)
+                animationViewAppMode.playAnimation()
+                //AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+                false
+            }else{
+                animationViewAppMode.setMinAndMaxProgress(1.0f, 1.0f)
+                animationViewAppMode.playAnimation()
+                //AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+                true
+            }
+        }//End animationViewAppMode.setOnClickListener
 
 
         backIv_ProfileFrag.setOnClickListener {
@@ -80,8 +94,39 @@ class SettingsActivity : AppCompatActivity() {
         }*/
 
         //textAutoCheck()
-    }
 
+        radioButton2.setOnClickListener{
+            /*val languageToLoad = "en"
+            val locale = Locale(languageToLoad)
+            Locale.setDefault(locale)
+            val config = Configuration()
+            config.locale = locale
+            if (savedInstanceState != null) {
+                setLocale("en-us",savedInstanceState)
+            };*/
+
+            if (savedInstanceState != null) {
+                setLocale("en-us", savedInstanceState)
+            }
+        }
+
+
+    }//End onCreate
+
+    private fun setLocale(localeCode: String, b: Bundle) {
+        val locale = Locale(localeCode)
+        Locale.setDefault(locale)
+        val config = Configuration()
+        config.locale = locale
+        baseContext.resources.updateConfiguration(config, baseContext.resources.displayMetrics)
+        applicationContext.resources.updateConfiguration(
+            config,
+            baseContext.resources.displayMetrics
+        )
+        this@SettingsActivity.getResources()
+            .updateConfiguration(config, baseContext.resources.displayMetrics)
+        onCreate(null)
+    }
 
     private fun getUserData() = CoroutineScope(Dispatchers.IO).launch {
         try {

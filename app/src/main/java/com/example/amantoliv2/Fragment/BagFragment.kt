@@ -64,11 +64,9 @@ class BagFragment : Fragment(), CartItemClickAdapter {
         MybagText.visibility = View.GONE
         emptyBagMsgLayout.visibility = View.VISIBLE
 
-
         cartRecView.layoutManager = LinearLayoutManager(context)
         cartAdapter = CartAdapter(activity as Context, this )
         cartRecView.adapter = cartAdapter
-
 
         cartViewModel = ViewModelProviders.of(this).get(CartViewModel::class.java)
 
@@ -114,4 +112,4 @@ class BagFragment : Fragment(), CartItemClickAdapter {
     }
 
 
-}
+}//Fin class BagFragment

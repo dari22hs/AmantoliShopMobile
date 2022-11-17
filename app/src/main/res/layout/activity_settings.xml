@@ -7,7 +7,6 @@
     tools:context=".SettingsActivity"
     android:background="@color/background">
 
-
     <LinearLayout
         android:id="@+id/topBarLayout"
         android:layout_width="match_parent"
@@ -58,7 +57,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
             android:fontFamily="@font/metropolis_regular"
-            android:text="Configuración"
+            android:text="@string/configuraci_n"
             android:gravity="center"
             android:textColor="@color/mainText"
             android:textSize="25sp"
@@ -71,7 +70,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/metropolis_semibold"
-            android:text="Notificaciones"
+            android:text="@string/notificaciones"
             android:textColor="@color/mainText"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -102,7 +101,7 @@
                 android:gravity="center"
                 android:elevation="5dp"
                 android:fontFamily="@font/metropolis_regular"
-                android:text="Promociones y cupones"
+                android:text="@string/promociones_y_cupones"
                 android:textColor="@color/mainText"
                 android:textSize="14sp" />
 
@@ -131,7 +130,7 @@
                 android:gravity="center"
                 android:elevation="5dp"
                 android:fontFamily="@font/metropolis_regular"
-                android:text="Información sobre mis pedidos"
+                android:text="@string/informaci_n_sobre_mis_pedidos"
                 android:textColor="@color/mainText"
                 android:textSize="14sp" />
 
@@ -160,7 +159,7 @@
                 android:gravity="center"
                 android:elevation="5dp"
                 android:fontFamily="@font/metropolis_regular"
-                android:text="Disponibilidad de productos"
+                android:text="@string/disponibilidad_de_productos"
                 android:textColor="@color/mainText"
                 android:textSize="14sp" />
 
@@ -172,7 +171,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/metropolis_semibold"
-            android:text="Beneficios"
+            android:text="@string/beneficios"
             android:textColor="@color/mainText"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -196,7 +195,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_gravity="center"
-                android:text="Usted aún no cuenta con los grandes beneficios de una cuenta Amantoli Pro.\n\nRevise las opciones que tenemos para usted."
+                android:text="@string/usted_a_n_no_cuenta_con_los_grandes_beneficios_de_una_cuenta_amantoli_pro_n_nrevise_las_opciones_que_tenemos_para_usted"
                 android:fontFamily="@font/metropolis_light"
                 android:textColor="@color/mainText"
                 android:textSize="14sp"/>
@@ -216,10 +215,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="¡Quiero ser Pro!"
+                android:text="@string/quiero_ser_pro"
                 android:textSize="16sp"
                 android:fontFamily="@font/metropolis_regular"
-                android:textColor="@color/mainText"
+                android:textColor="@color/white"
                 android:layout_gravity="center"/>
         </LinearLayout>
 
@@ -231,7 +230,7 @@
             android:layout_marginTop="20dp"
             android:elevation="5dp"
             android:fontFamily="@font/metropolis_semibold"
-            android:text="Idioma"
+            android:text="@string/idioma"
             android:textColor="@color/mainText"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -256,7 +255,7 @@
                 android:checked="true"
                 android:fontFamily="@font/metropolis_light"
                 android:textColor="@color/mainText"
-                android:text="Español" />
+                android:text="@string/espa_ol" />
 
             <ImageView
                 android:layout_width="35dp"
@@ -273,7 +272,7 @@
                 android:layout_marginLeft="50dp"
                 android:fontFamily="@font/metropolis_light"
                 android:textColor="@color/mainText"
-                android:text="English" />
+                android:text="@string/english" />
 
             <ImageView
                 android:layout_width="35dp"
@@ -291,7 +290,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/metropolis_semibold"
-            android:text="Modo de aplicación"
+            android:text="@string/modo_de_aplicaci_n"
             android:textColor="@color/mainText"
             android:textSize="16sp" />
 
@@ -300,11 +299,9 @@
             android:id="@+id/animationViewAppMode"
             android:layout_width="100dp"
             android:layout_height="80dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView9"
-            app:lottie_rawRes="@raw/day_night_switch" />
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/switch_app_mode_v4" />
 
     </LinearLayout>
-
 
 </RelativeLayout>

@@ -96,13 +96,13 @@ class ProfileFragment : Fragment() {
             cards = it.size
         })
 
-        if(cards == 0){
+        /*if(cards == 0){
             cardsNumber_profileFrag.text = "Administrar mis tarjetas."
         }
         else{
 
             cardsNumber_profileFrag.text = "Tiene "+ cards.toString() + " tarjetas."
-        }
+        }*/
 
         //Abrir direcciones de envío
         shippingAddressCard_ProfilePage.setOnClickListener {

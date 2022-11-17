@@ -4,8 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/visualBottomSheet"
-    android:background="@drawable/menu_bg"
-    >
+    android:background="@color/background">
 
     <TextView
         android:id="@+id/textView3"
@@ -45,15 +44,17 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:layout_marginTop="50dp"
         android:id="@+id/searchBtn_VisualPredict"
+        android:layout_marginTop="50dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:background="@drawable/btn_bg_login2"
+        android:background="@drawable/btn_bg_4"
         android:text="Buscar"
         android:textColor="@color/white"
+        android:fontFamily="@font/metropolis_semibold"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView2" />

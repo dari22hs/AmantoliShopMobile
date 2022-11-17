@@ -36,7 +36,7 @@
             android:layout_weight="1"
             android:fontFamily="@font/metropolis_regular"
             android:gravity="center"
-            android:text="Búsqueda visual"
+            android:text="@string/b_squeda_visual"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -73,7 +73,7 @@
             android:layout_marginTop="15dp"
             android:layout_marginRight="10dp"
             android:fontFamily="@font/metropolis_semibold"
-            android:text="Tome o suba una foto para buscar objetos similares"
+            android:text="@string/tome_o_suba_una_foto_para_buscar_objetos_similares"
             android:textColor="@color/white"
             android:textSize="25sp" />
 
@@ -84,8 +84,8 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="10dp"
-            android:background="@drawable/btn_bg_login2"
-            android:text="Tomar foto"
+            android:background="@drawable/btn_bg_4"
+            android:text="@string/tomar_foto"
             android:fontFamily="@font/metropolis_bold"
             android:textStyle="bold"
             android:textSize="16sp"
@@ -96,15 +96,14 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="15dp"
-            android:layout_marginRight="10dp"
-            android:background="@drawable/btn_bg_3">
+            android:layout_marginRight="10dp">
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/uploadAPhotoBtn_visualSearch"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/btn_bg_3"
-                android:text="Subir foto"
+                android:background="@drawable/btn_bg_4"
+                android:text="@string/subir_foto"
                 android:fontFamily="@font/metropolis_bold"
                 android:textStyle="bold"
                 android:textSize="16sp"

@@ -10,4 +10,5 @@
     <color name="mainText">#FFFFFFFF</color>
     <color name="textAd">#9B9B9B</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="bottomMenu">#A0A2A7</color>
 </resources>

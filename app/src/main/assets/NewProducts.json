@@ -1,29 +1,29 @@
 [
   {
-    "productName": "Quetzalcóatl",
+    "productName": "Sol y Luna",
     "productId": "1",
-    "productPrice": "3500",
-    "productDes": "La legendaria serpiente emplumada, llevada a la realidad con el mejor material de barro. Disfruta los detalles artísticos en esta increíble pieza de arte\n\nPeso: 6 kg.\n\"\n\n\n\n",
-    "productRating": 4.7,
-    "productDisCount": "8%",
+    "productPrice": "240",
+    "productDes": "Par de tazas ideales para un buen café. Disfruta los detalles artísticos en este par de tazas con un diseño original\n\nCantidad: 2 tazas\n\"\n\n\n\n",
+    "productRating": 4.8,
+    "productDisCount": "5%",
     "productHave": true,
     "productBrand": "TonaYork",
-    "productImage": "https://i.pinimg.com/564x/4e/36/d0/4e36d0f01ea82a715b17909cb56dd436.jpg",
+    "productImage": "https://i.pinimg.com/564x/30/ca/ee/30caee2a8a148c3651b9901d8cede8db.jpg",
     "productCategory": "Alfarería",
-    "productNote": "TonaYork"
+    "productNote": "Sol y Luna"
   },
   {
-    "productName": "Dragón mítico",
+    "productName": "Tierra en Llamas",
     "productId": "2",
-    "productPrice": "4200",
-    "productDes": "Una obra de arte inspirada en la mitología de los dragones. Gran lujo de detalles, trazados a mano por los mejores artesanos de México.\n\nPeso: 12.5 kg.\n\n\"\n\n\n\n\n\n",
-    "productRating": 5,
+    "productPrice": "770",
+    "productDes": "Una obra de arte inspirada en la situación actual mundial en cuanto al cambio climático. Gran lujo de detalles, trazados a mano por los mejores artesanos de México.\n\nPeso: 4.5 kg.\n\n\"\n\n\n\n\n\n",
+    "productRating": 4.8,
     "productDisCount": "12%",
     "productHave": true,
-    "productBrand": "Los Manotas",
-    "productImage": "https://i.pinimg.com/564x/ee/27/6c/ee276c3f4ae4f9c5321561e3dc6f838e.jpg",
-    "productCategory": "Esculturas",
-    "productNote": "Los Manotas"
+    "productBrand": "TonaYork",
+    "productImage": "https://i.pinimg.com/564x/12/3d/71/123d71c5397796c8c1baddd1dcff4962.jpg",
+    "productCategory": "Alfarería",
+    "productNote": "Tierra en Llamas"
   },
   {
     "productName": "Honor Maya",

@@ -35,7 +35,7 @@
             android:layout_weight="1"
             android:fontFamily="@font/metropolis_regular"
             android:gravity="center"
-            android:text="Direcciones de envío"
+            android:text="@string/direcciones_de_env_o_activity"
             android:textColor="@color/mainText"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -59,7 +59,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Dirección #1 - Trabajo"
+            android:text="@string/direcci_n_1_trabajo"
             android:textSize="16sp"
             android:fontFamily="@font/metropolis_regular"
             android:textColor="@color/mainText"/>
@@ -75,7 +75,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Predeterminada"
+            android:text="@string/predeterminada"
             android:textSize="14sp"
             android:fontFamily="@font/metropolis_regular"
             android:textColor="@color/mainText"/>
@@ -162,7 +162,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Dirección #2 - Casa"
+                android:text="@string/direcci_n_2_casa"
                 android:textSize="16sp"
                 android:fontFamily="@font/metropolis_regular"
                 android:textColor="@color/mainText"/>
@@ -178,7 +178,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Predeterminada"
+                android:text="@string/predeterminada"
                 android:textSize="14sp"
                 android:fontFamily="@font/metropolis_regular"
                 android:textColor="@color/mainText"/>

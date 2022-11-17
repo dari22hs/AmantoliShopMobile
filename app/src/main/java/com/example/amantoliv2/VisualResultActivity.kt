@@ -80,6 +80,6 @@ class VisualResultActivity : AppCompatActivity() {
 
         }
 
+    }//End fun setResultData
 
-    }
-}
+}//End class VisualResultActivity
