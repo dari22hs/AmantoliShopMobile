@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".AugmentedRealityActivity">
 
-    <androidx.fragment.app.FragmentContainerView
+    <fragment
         android:id="@+id/fragment"
         android:layout_width="0dp"
         android:layout_height="0dp"

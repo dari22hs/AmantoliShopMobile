@@ -40,7 +40,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Adquiere una suscripción mensual para obtener los siguientes beneficios:"
+            android:text="@string/adquiere_una_suscripci_n_mensual_para_obtener_los_siguientes_beneficios"
             android:textSize="16sp"
             android:fontFamily="@font/metropolis_light"
             android:textColor="@color/mainText" />
@@ -63,7 +63,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Remover anuncios en la plataforma web y móvil."
+            android:text="@string/remover_anuncios_en_la_plataforma_web_y_m_vil"
             android:fontFamily="@font/metropolis_light"
             android:textColor="@color/mainText"
             android:layout_gravity="center"
@@ -87,7 +87,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Envíos gratis en pedidos mayores a $400"
+            android:text="@string/env_os_gratis_en_pedidos_mayores_a_400"
             android:fontFamily="@font/metropolis_light"
             android:textColor="@color/mainText"
             android:layout_marginStart="10dp"
@@ -112,7 +112,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Envíos rápidos en 1 - 2 días"
+            android:text="@string/env_os_r_pidos_en_1_2_d_as"
             android:fontFamily="@font/metropolis_light"
             android:textColor="@color/mainText"
             android:layout_marginStart="10dp"
@@ -137,7 +137,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Dos cupones por el 10% de descuento en el total de la compra."
+            android:text="@string/dos_cupones_por_el_10_de_descuento_en_el_total_de_la_compra"
             android:fontFamily="@font/metropolis_light"
             android:textColor="@color/mainText"
             android:layout_marginStart="10dp"
@@ -160,7 +160,7 @@
             android:id="@+id/btnSubscribeBuyer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Suscribirme"
+            android:text="@string/suscribirme"
             android:padding="5dp"
             android:layout_gravity="center"
             android:gravity="center"

@@ -21,8 +21,8 @@ class SubscriptionInfo : AppCompatActivity() {
         tabLayout = findViewById(R.id.tabLayoutSubs)
         viewPager = findViewById(R.id.viewPagerSubs)
 
-        tabLayout.addTab(tabLayout.newTab().setText("SOY COMPRADOR"))
-        tabLayout.addTab(tabLayout.newTab().setText("SOY VENDEDOR"))
+        tabLayout.addTab(tabLayout.newTab().setText("SOY CLIENTE"))
+        tabLayout.addTab(tabLayout.newTab().setText("SOY ARTESANO"))
         tabLayout.tabGravity = TabLayout.GRAVITY_FILL
 
         val adapterSubs = SubscriptionAdapter(this, supportFragmentManager, tabLayout.tabCount)

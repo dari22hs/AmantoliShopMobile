@@ -17,12 +17,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <ImageView
         android:id="@+id/amantoliTxtSplash"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/amantolicolortwo"
+        android:src="@drawable/amantolicolortwo_v2"
         android:gravity="center"
         android:layout_marginTop="20dp"
         android:textColor="@color/primary"
@@ -32,7 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/metropolis_semibold"
-        android:text="POR NEXTIA SOLUTIONS MX"
+        android:text="@string/por_nextia_solutions_mx"
         android:gravity="center"
         android:layout_marginTop="60dp"
         android:textColor="#8E22DB"

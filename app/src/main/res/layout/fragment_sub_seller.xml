@@ -20,7 +20,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Amantoli Básico"
+        android:text="@string/amantoli_b_sico"
         android:fontFamily="@font/metropolis_semibold"
         android:textAlignment="center"
         android:textColor="@color/mainText"
@@ -51,7 +51,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Adquiere una suscripción mensual del Plan Básico para obtener los siguientes beneficios:"
+                android:text="@string/adquiere_una_suscripci_n_mensual_del_plan_b_sico_para_obtener_los_siguientes_beneficios"
                 android:textSize="16sp"
                 android:fontFamily="@font/metropolis_light"
                 android:textColor="@color/mainText" />
@@ -74,7 +74,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Modelado de 3D de máximo 5 productos"
+                android:text="@string/modelado_de_3d_de_m_ximo_5_productos"
                 android:fontFamily="@font/metropolis_light"
                 android:textColor="@color/mainText"
                 android:layout_gravity="center"
@@ -100,7 +100,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="5dp"
-                android:text="Exposición publicitaria de productos (3 productos por 10 días)"
+                android:text="@string/exposici_n_publicitaria_de_productos_3_productos_por_10_d_as"
                 android:fontFamily="@font/metropolis_light"
                 android:textColor="@color/mainText"
                 android:layout_marginStart="10dp"
@@ -122,7 +122,7 @@
                 android:id="@+id/btnSubscribeSellerBasic"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Suscribirme"
+                android:text="@string/suscribirme"
                 android:padding="5dp"
                 android:layout_gravity="center"
                 android:gravity="center"
@@ -146,7 +146,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Amantoli Pro"
+        android:text="@string/amantoli_pro"
         android:fontFamily="@font/metropolis_semibold"
         android:textAlignment="center"
         android:textColor="@color/mainText"
@@ -177,7 +177,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Adquiere una suscripción mensual del Plan Pro para obtener los siguientes beneficios:"
+                android:text="@string/adquiere_una_suscripci_n_mensual_del_plan_pro_para_obtener_los_siguientes_beneficios"
                 android:textSize="16sp"
                 android:fontFamily="@font/metropolis_light"
                 android:textColor="@color/mainText" />
@@ -200,7 +200,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Modelado de 3D de máximo 10 productos"
+                android:text="@string/modelado_de_3d_de_m_ximo_10_productos"
                 android:fontFamily="@font/metropolis_light"
                 android:textColor="@color/mainText"
                 android:layout_gravity="center"
@@ -226,7 +226,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="5dp"
-                android:text="Exposición publicitaria de productos (10 productos por 20 días)"
+                android:text="@string/exposici_n_publicitaria_de_productos_10_productos_por_20_d_as"
                 android:fontFamily="@font/metropolis_light"
                 android:textColor="@color/mainText"
                 android:layout_marginStart="10dp"
@@ -253,7 +253,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="5dp"
-                android:text="Descuento de 10% en la próxima suscripción a elegir."
+                android:text="@string/descuento_de_10_en_la_pr_xima_suscripci_n_a_elegir"
                 android:fontFamily="@font/metropolis_light"
                 android:textColor="@color/mainText"
                 android:layout_marginStart="10dp"
@@ -275,7 +275,7 @@
                 android:id="@+id/btnSubscribeSellerPro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Suscribirme"
+                android:text="@string/suscribirme"
                 android:padding="8dp"
                 android:layout_gravity="center"
                 android:gravity="center"

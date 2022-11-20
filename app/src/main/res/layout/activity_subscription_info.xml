@@ -36,7 +36,7 @@
             android:layout_weight="1"
             android:fontFamily="@font/metropolis_regular"
             android:gravity="center"
-            android:text="SUSCRIPCIONES"
+            android:text="@string/suscripciones"
             android:textColor="@color/mainText"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -51,6 +51,7 @@
         android:orientation="horizontal"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
+        android:gravity="center"
         android:layout_marginTop="50dp">
 
         <TextView
@@ -59,7 +60,7 @@
             android:textColor="@color/mainText"
             android:textSize="16sp"
             android:textAlignment="center"
-            android:text="Elige un plan de acuerdo a tus gustos y necesidades."
+            android:text="@string/elige_un_plan_de_acuerdo_a_tus_gustos_y_necesidades"
             android:fontFamily="@font/metropolis_regular"/>
 
     </LinearLayout>

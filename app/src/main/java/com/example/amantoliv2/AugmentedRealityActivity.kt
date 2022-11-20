@@ -15,20 +15,20 @@ import com.google.ar.sceneform.ux.TransformableNode
 class AugmentedRealityActivity : AppCompatActivity() {
 
     private lateinit var arFragment: ArFragment
-    private lateinit var fragment: androidx.fragment.app.FragmentContainerView
 
     @RequiresApi(Build.VERSION_CODES.N)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_augmented_reality)
 
-        fragment = findViewById(R.id.fragment)
+        //arFragment = fragment as ArFragment
 
-        arFragment = fragment as ArFragment
-
+        /**
+         * Touch listener to detect when a user touches the ArScene plane to place a model
+         */
         arFragment.setOnTapArPlaneListener { hitResult, plane, motionEvent ->
             setModelOnUi(hitResult)
-        }//End setOnTapArPlaneListener
+        }
 
     }//End onCreate
 

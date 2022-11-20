@@ -37,7 +37,7 @@
             android:layout_weight="1"
             android:fontFamily="@font/metropolis_regular"
             android:gravity="center"
-            android:text="ROPA"
+            android:text="@string/ropa_category"
             android:textColor="@color/mainText"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -65,7 +65,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Buscar:"
+                    android:text="@string/buscar"
                     android:layout_gravity="center"
                     android:textColor="@color/mainText"
                     android:textSize="16sp"
@@ -104,7 +104,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Ordenar por:"
+                        android:text="@string/ordenar_por"
                         android:textColor="@color/mainText"
                         android:textSize="14sp"
                         android:fontFamily="@font/metropolis_light"/>
@@ -113,7 +113,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
-                        android:text="Opinión media de los clientes"
+                        android:text="@string/opini_n_media_de_los_clientes"
                         android:textColor="@color/mainText"
                         android:textSize="14sp"
                         android:fontFamily="@font/metropolis_light"/>
@@ -122,7 +122,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
-                        android:text="Precio: de mayor a menor"
+                        android:text="@string/precio_de_mayor_a_menor"
                         android:textColor="@color/mainText"
                         android:textSize="14sp"
                         android:fontFamily="@font/metropolis_light"/>
@@ -131,7 +131,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
-                        android:text="Precio: de menor a mayor"
+                        android:text="@string/precio_de_menor_a_mayor"
                         android:textColor="@color/mainText"
                         android:textSize="14sp"
                         android:fontFamily="@font/metropolis_light"/>
@@ -140,7 +140,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
-                        android:text="Lo más nuevo"
+                        android:text="@string/lo_m_s_nuevo"
                         android:textColor="@color/mainText"
                         android:textSize="14sp"
                         android:fontFamily="@font/metropolis_light"/>
@@ -163,7 +163,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="true"
-                    android:text="Con Amantoli Pro"
+                    android:text="@string/con_amantoli_pro"
                     android:textStyle="bold"
                     android:textColor="@color/mainText"
                     android:textSize="16sp"
@@ -172,7 +172,7 @@
                 <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Incluir agotado"
+                    android:text="@string/incluir_agotado"
                     android:textStyle="bold"
                     android:checked="true"
                     android:textColor="@color/mainText"
@@ -761,7 +761,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Anterior"
+                    android:text="@string/anterior"
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
                     android:textStyle="bold"
@@ -805,7 +805,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Siguiente"
+                    android:text="@string/siguiente"
                     android:textStyle="bold"
                     android:textColor="@color/mainText"
                     android:textSize="16sp"

@@ -41,7 +41,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="PAGO DE PEDIDO"
+                android:text="@string/pago_de_pedido"
                 android:textAlignment="center"
                 android:textColor="@color/mainText"
                 android:textSize="20sp"
@@ -66,7 +66,7 @@
                 app:boxCornerRadiusTopEnd="10dp"
                 app:boxCornerRadiusBottomStart="10dp"
                 app:boxCornerRadiusBottomEnd="10dp"
-                android:hint="Total"
+                android:hint="@string/total_payment"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:textColor="@color/mainText"
                 android:fontFamily="@font/metropolis_light"
@@ -89,7 +89,6 @@
 
         </LinearLayout>
 
-
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/etAddStreetAndNumber"
             android:layout_marginTop="130dp"
@@ -101,7 +100,7 @@
             app:boxCornerRadiusTopEnd="10dp"
             app:boxCornerRadiusBottomStart="10dp"
             app:boxCornerRadiusBottomEnd="10dp"
-            android:hint="Nombre"
+            android:hint="@string/nombre_plan_sub"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:textColor="@color/mainText"
             android:fontFamily="@font/metropolis_light"
@@ -131,7 +130,7 @@
             app:boxCornerRadiusTopEnd="10dp"
             app:boxCornerRadiusBottomStart="10dp"
             app:boxCornerRadiusBottomEnd="10dp"
-            android:hint="Número de tarjeta"
+            android:hint="@string/n_mero_de_tarjeta"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:textColor="@color/mainText"
             android:fontFamily="@font/metropolis_light"
@@ -149,7 +148,6 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!--Input Tarjeta-->
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/etCity"
             android:layout_marginTop="250dp"
@@ -161,7 +159,7 @@
             app:boxCornerRadiusTopEnd="10dp"
             app:boxCornerRadiusBottomStart="10dp"
             app:boxCornerRadiusBottomEnd="10dp"
-            android:hint="Fecha de vencimiento"
+            android:hint="@string/fecha_de_vencimiento"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:textColor="@color/mainText"
             android:fontFamily="@font/metropolis_light"
@@ -216,10 +214,10 @@
             android:layout_height="50dp"
             android:layout_marginTop="315dp"
             android:textSize="16sp"
-            android:text="PROCEDER AL PAGO"
+            android:text="@string/proceder_al_pago"
             android:onClick="openLink"
             android:fontFamily="@font/metropolis_bold"
-            android:textColor="@color/mainText"
+            android:textColor="@color/white"
             android:background="@drawable/btn_bg_4" />
 
     </androidx.cardview.widget.CardView>

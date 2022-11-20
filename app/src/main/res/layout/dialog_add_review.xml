@@ -41,7 +41,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="MI RESEÑA"
+                android:text="@string/mi_rese_a"
                 android:textAlignment="center"
                 android:textColor="@color/mainText"
                 android:textSize="16sp"
@@ -66,7 +66,7 @@
                 app:boxCornerRadiusTopEnd="10dp"
                 app:boxCornerRadiusBottomStart="10dp"
                 app:boxCornerRadiusBottomEnd="10dp"
-                android:hint="Título"
+                android:hint="@string/t_tulo"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:textColor="@color/mainText"
                 android:fontFamily="@font/metropolis_light"
@@ -85,7 +85,7 @@
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Anónimo"
+                android:text="@string/an_nimo"
                 android:checked="false"
                 android:textColor="@color/mainText"
                 android:fontFamily="@font/metropolis_light"
@@ -107,7 +107,7 @@
             app:boxCornerRadiusBottomStart="10dp"
             app:boxCornerRadiusBottomEnd="10dp"
             android:gravity="top"
-            android:hint="Reseña"
+            android:hint="@string/rese_a"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:textColor="@color/mainText"
             android:fontFamily="@font/metropolis_light"
@@ -129,7 +129,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/mainText"
-            android:text="Calificación"
+            android:text="@string/calificaci_n"
             android:fontFamily="@font/metropolis_light"
             android:layout_marginStart="10dp"
             android:layout_marginTop="280dp"/>
@@ -158,7 +158,7 @@
             android:layout_height="50dp"
             android:layout_marginTop="340dp"
             android:textSize="16sp"
-            android:text="Enviar"
+            android:text="@string/enviar"
             android:fontFamily="@font/metropolis_bold"
             android:textColor="@color/mainText"
             android:background="@drawable/btn_bg_4" />

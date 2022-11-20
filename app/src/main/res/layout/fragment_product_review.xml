@@ -32,7 +32,7 @@
             android:layout_weight="1"
             android:fontFamily="@font/metropolis_regular"
             android:gravity="center"
-            android:text="RESEÑAS"
+            android:text="@string/rese_as"
             android:textColor="@color/mainText"
             android:textSize="20sp" />
 

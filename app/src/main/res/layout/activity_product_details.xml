@@ -138,7 +138,7 @@
                     android:layout_marginTop="20dp"
                     android:layout_marginRight="10dp"
                     android:fontFamily="@font/metropolis_regular"
-                    android:text="Detalle del producto"
+                    android:text="@string/detalle_del_producto"
                     android:textColor="@color/mainText"
                     android:textSize="15sp" />
 
@@ -176,7 +176,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/metropolis_regular"
-                            android:text="Métodos de pago"
+                            android:text="@string/modelo_en_3d"
                             android:textColor="@color/mainText"
                             android:textSize="16sp" />
 
@@ -186,7 +186,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5dp"
                             android:fontFamily="@font/metropolis_regular"
-                            android:text="Ver mis tarjetas"
+                            android:text="@string/abrir_modelo_del_producto"
                             android:textColor="@color/textAd"
                             android:textSize="12sp" />
 
@@ -218,7 +218,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/metropolis_regular"
-                            android:text="Valoración"
+                            android:text="@string/valoraci_n"
                             android:textColor="@color/mainText"
                             android:textSize="16sp" />
 
@@ -228,7 +228,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5dp"
                             android:fontFamily="@font/metropolis_regular"
-                            android:text="Ver reseñas"
+                            android:text="@string/ver_rese_as"
                             android:textSize="12sp" />
 
                     </LinearLayout>
@@ -270,7 +270,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:fontFamily="@font/metropolis_semibold"
-                            android:text="Puede que te guste"
+                            android:text="@string/puede_que_te_guste"
                             android:textColor="@color/mainText"
                             android:textSize="25sp" />
 
@@ -285,7 +285,7 @@
                             android:layout_height="match_parent"
                             android:fontFamily="@font/metropolis_regular"
                             android:gravity="center"
-                            android:text="Según tu interés"
+                            android:text="@string/seg_n_tu_inter_s"
                             android:textColor="@color/mainText"
                             android:textSize="12sp" />
 
@@ -298,7 +298,7 @@
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
                         android:fontFamily="@font/metropolis_regular"
-                        android:text="Recomendado"
+                        android:text="@string/recomendado"
                         android:textColor="@color/textAd"
                         android:textSize="11sp" />
 
@@ -337,7 +337,7 @@
             android:layout_marginRight="10dp"
             android:layout_marginBottom="50dp"
             android:background="@drawable/btn_bg_4"
-            android:text="Agregar a la bolsa"
+            android:text="@string/agregar_a_la_bolsa"
             android:textSize="16sp"
             android:fontFamily="@font/metropolis_bold"
             android:textColor="@color/mainText"/>
