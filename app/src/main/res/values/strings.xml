@@ -116,7 +116,7 @@
     <string name="recordar_contrase_a"> Recordar contraseña</string>
     <string name="olvid_su_contrase_a">¿Olvidó su contraseña?</string>
     <string name="entrar">Entrar</string>
-    <string name="no_tiene_cuenta">¿No tiene cuenta?</string>
+    <string name="no_tiene_cuenta">¿No tiene cuenta? </string>
     <string name="crear_cuenta_gratis">Crear cuenta gratis</string>
     <string name="detalle_del_producto">Detalle del producto</string>
     <string name="modelo_en_3d">Modelo en 3D</string>
@@ -207,5 +207,10 @@
     <string name="_4_7_de_5">4.7 de 5</string>
     <string name="_4_3_de_5">4.3 de 5</string>
     <string name="coincidencias_visuales_8_resultados">Coincidencias visuales (8 resultados)</string>
+    <string name="cerrar_sesi_n">Cerrar sesión</string>
+    <string name="regresar_al_inicio_de_sesi_n">Regresar al inicio de sesión</string>
+    <string name="desea_cerrar_sesi_n">¿Desea cerrar sesión?</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="salir">Salir</string>
 
 </resources>

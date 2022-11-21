@@ -120,8 +120,8 @@
     <string name="recordar_contrase_a"> Remember password</string>
     <string name="olvid_su_contrase_a">Did you forget your password?</string>
     <string name="entrar">Enter</string>
-    <string name="no_tiene_cuenta">You don\'t have an account yet?</string>
-    <string name="crear_cuenta_gratis"> Create a free account</string>
+    <string name="no_tiene_cuenta">You don\'t have an account?</string>
+    <string name="crear_cuenta_gratis"> Create account</string>
     <string name="detalle_del_producto">Product detail</string>
     <string name="modelo_en_3d">3D model</string>
     <string name="abrir_modelo_del_producto">Open product model</string>
@@ -211,7 +211,12 @@
     <string name="_4_7_de_5">4.7 out of 5</string>
     <string name="_4_8_de_5">4.8 out of 5</string>
     <string name="_4_9_de_5">4.9 out of 5</string>
-    <string name="coincidencias_visuales_8_resultados">Coincidencias visuales (8 resultados)</string>
+    <string name="coincidencias_visuales_8_resultados">Visual matches (8 results)</string>
+    <string name="cerrar_sesi_n">Logout</string>
+    <string name="regresar_al_inicio_de_sesi_n">Go back to login screen</string>
+    <string name="desea_cerrar_sesi_n">Do you want to logout?</string>
+    <string name="cancelar">Cancel</string>
+    <string name="salir">Logout</string>
     <!--BÚSQUEDA VISUAL-->
 
 </resources>

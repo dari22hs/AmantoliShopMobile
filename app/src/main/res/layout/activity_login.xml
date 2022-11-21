@@ -23,7 +23,7 @@
         android:layout_width="350dp"
         android:layout_height="60dp"
         android:layout_marginTop="10dp"
-        android:src="@drawable/bg_amantoli_color_txt"
+        android:src="@drawable/amantolicolortwo_nb_v3"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -69,6 +69,7 @@
             android:textSize="14sp">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailEtInput"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="12dp"
@@ -122,6 +123,7 @@
             android:textSize="14sp">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passEtInput"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="12dp"
@@ -183,7 +185,7 @@
             android:id="@+id/loginBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/btn_bg_login2"
             android:elevation="10dp"
             android:fontFamily="@font/metropolis_bold"
@@ -194,10 +196,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:gravity="center"
-
-            >
+            android:layout_marginTop="20dp"
+            android:gravity="center">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -214,6 +214,7 @@
                 android:fontFamily="@font/metropolis_regular"
                 android:text="@string/crear_cuenta_gratis"
                 android:textColor="#8E22DB"
+                android:layout_marginLeft="5dp"
                 android:textFontWeight="700"
                 android:textSize="14sp" />
         </LinearLayout>

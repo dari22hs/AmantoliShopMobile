@@ -141,7 +141,7 @@
         <activity android:name=".SplashScreenActivity" />
         <activity android:name=".SettingsActivity" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -152,7 +152,7 @@
         <activity android:name=".EmailVerifyActivity" />
         <activity android:name=".VisualSearchActivity" />
         <activity android:name=".SignUpActivity" />
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".HomeActivity" />
     </application>
 
 </manifest>

@@ -10,6 +10,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
+import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.widget.AppCompatButton
 import androidx.cardview.widget.CardView
 import androidx.lifecycle.ViewModelProviders
 import com.airbnb.lottie.LottieAnimationView
@@ -53,6 +55,8 @@ class ProfileFragment : Fragment() {
     lateinit var profileName_profileFrag:TextView
     lateinit var profileEmail_profileFrag:TextView
 
+    lateinit var cVlogout: CardView
+
     private lateinit var cardViewModel: CardViewModel
 
     private val userCollectionRef = Firebase.firestore.collection("Users")
@@ -63,10 +67,6 @@ class ProfileFragment : Fragment() {
     lateinit var linearLayout2:LinearLayout
     lateinit var linearLayout3:LinearLayout
     lateinit var linearLayout4:LinearLayout
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -84,6 +84,9 @@ class ProfileFragment : Fragment() {
         linearLayout2 = view.findViewById(R.id.linearLayout2)
         linearLayout3 = view.findViewById(R.id.linearLayout3)
         linearLayout4 = view.findViewById(R.id.linearLayout4)
+
+        cVlogout = view.findViewById(R.id.cVlogout)
+
         val shippingAddressCard_ProfilePage = view.findViewById<CardView>(R.id.shippingAddressCard_ProfilePage)
         val paymentMethod_ProfilePage = view.findViewById<CardView>(R.id.paymentMethod_ProfilePage)
         val cardsNumber_profileFrag: TextView = view.findViewById(R.id.cardsNumber_profileFrag)
@@ -129,6 +132,39 @@ class ProfileFragment : Fragment() {
         promo_codes_profile_frag.setOnClickListener {
             val intent = Intent(context, PromoCodes::class.java)
             startActivity(intent)
+        }
+
+        //Regresar al login
+        cVlogout.setOnClickListener {
+            val view = View.inflate(context, R.layout.dialog_logout_confirmation, null)
+
+            var btnLogoutConfirm: AppCompatButton = view.findViewById(R.id.btnLogoutConfirm)
+
+            var btnCancelLogout: AppCompatButton = view.findViewById(R.id.btnCancelLogout)
+
+            val builder = context?.let { it1 -> AlertDialog.Builder(it1) }
+            if (builder != null) {
+                builder.setView(view)
+            }
+
+            val dialog = builder?.create()
+            if (dialog != null) {
+                dialog.show()
+            }
+            if (dialog != null) {
+                dialog.window?.setBackgroundDrawableResource(android.R.color.transparent)
+            }
+
+            btnLogoutConfirm.setOnClickListener {
+                var intent = Intent(context, LoginActivity::class.java)
+                startActivity(intent)
+            }//End btnLogoutConfirm.setOnClickListener
+
+            btnCancelLogout.setOnClickListener {
+                if (dialog != null) {
+                    dialog.dismiss()
+                }
+            }//End btnCancelLogout.setOnClickListener
         }
 
         hideLayout()
