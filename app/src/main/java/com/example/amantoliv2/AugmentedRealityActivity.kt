@@ -14,11 +14,11 @@ import com.google.ar.sceneform.ux.TransformableNode
 
 val products = mutableListOf(
     ProductAr(
-        1, "Wooden Chair", "4,900", R.drawable.ajolotitologo,
-        "FREE delivery by Wed, 10 Aug",
-        "Acacia Wood and Natural Cane Weaving",
-        4.5f, "1,210",
-        "https://firebasestorage.googleapis.com/v0/b/amantoliv3.appspot.com/o/models%2Felefante_madera.glb?alt=media&token=36b49766-6ff6-48c0-a8db-6b6a07806ecd"
+        1, "Jarrón Lalito", "380", R.drawable.alfa_ceramica_lalito,
+        "Por Taller Barbosa",
+        "Jarrón de cerámica ideal para decorar el hogar o usar como florero. Diseño elegante y minimalista con bordes redondeados en la boca del jarro.",
+        4.5f, "4",
+        "https://firebasestorage.googleapis.com/v0/b/amantoliv3.appspot.com/o/models%2Falfa_ceramica_a.glb?alt=media&token=ea7912d2-4ce1-4377-a76e-bd2fbc4a7f0c"
     ),
     ProductAr(
         2, "Canteen Table", "4,500", R.drawable.ajolotitologo,

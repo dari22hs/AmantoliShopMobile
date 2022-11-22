@@ -10,7 +10,7 @@
     <string name="add_card">Agregar</string>
     <string name="empty_favourite">¡No hay favoritos agregados!</string>
     <string name="add_to_bag">Agregar</string>
-    <string name="card_number_star">**** **** **** ****</string>
+    <!--<string name="card_number_star">**** **** **** ****</string>-->
     <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
     <string name="configuraci_n">Configuración</string>
     <string name="notificaciones">Notificaciones</string>
@@ -119,8 +119,8 @@
     <string name="no_tiene_cuenta">¿No tiene cuenta? </string>
     <string name="crear_cuenta_gratis">Crear cuenta gratis</string>
     <string name="detalle_del_producto">Detalle del producto</string>
-    <string name="modelo_en_3d">Modelo en 3D</string>
-    <string name="abrir_modelo_del_producto">Abrir modelo del producto</string>
+    <string name="modelo_en_3d">Realidad Aumentada</string>
+    <string name="abrir_modelo_del_producto">Experimenta esta función</string>
     <string name="valoraci_n">Valoración</string>
     <string name="ver_rese_as">Ver reseñas</string>
     <string name="puede_que_te_guste">Puede que te guste</string>
@@ -212,5 +212,6 @@
     <string name="desea_cerrar_sesi_n">¿Desea cerrar sesión?</string>
     <string name="cancelar">Cancelar</string>
     <string name="salir">Salir</string>
+    <string name="realidad_aumentada">Realidad Aumentada</string>
 
 </resources>

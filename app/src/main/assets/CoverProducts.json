@@ -63,5 +63,18 @@
     "productImage": "https://i.pinimg.com/564x/6a/07/d7/6a07d75645af62f84c5fc57e13951718.jpg",
     "productCategory": "Alfarería",
     "productNote": "El Renacer"
+  },
+  {
+    "productName": "Jarrón Lalito",
+    "productId": "6",
+    "productPrice": "380",
+    "productDes": "Jarrón de cerámica ideal para decorar el hogar o usar como florero.\n\nDiseño elegante y minimalista con bordes redondeados en la boca del jarro.\n\nPeso: 2.2 kg.\n\nAltura: 55 cm.\n\n\n\n",
+    "productRating": 4.5,
+    "productDisCount": "5%",
+    "productHave": true,
+    "productBrand": "Taller Barbosa",
+    "productImage": "https://i.pinimg.com/750x/c4/60/ed/c460ed95b92b4218b9162a894dc2ae35.jpg",
+    "productCategory": "Alfarería",
+    "productNote": "Jarrón Lalito"
   }
 ]

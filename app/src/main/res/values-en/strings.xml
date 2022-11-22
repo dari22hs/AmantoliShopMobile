@@ -10,7 +10,7 @@
     <string name="add_card">Add</string>
     <string name="empty_favourite">¡No favs added!</string>
     <string name="add_to_bag">Add to bag</string>
-    <string name="card_number_star">**** **** **** ****</string>
+    <!--<string name="card_number_star">**** **** **** ****</string>-->
     <string name="configuraci_n">Settings</string>
     <string name="notificaciones">Notifications</string>
     <string name="promociones_y_cupones">Promos and cupons</string>
@@ -123,8 +123,8 @@
     <string name="no_tiene_cuenta">You don\'t have an account?</string>
     <string name="crear_cuenta_gratis"> Create account</string>
     <string name="detalle_del_producto">Product detail</string>
-    <string name="modelo_en_3d">3D model</string>
-    <string name="abrir_modelo_del_producto">Open product model</string>
+    <string name="modelo_en_3d">Augmented Reality</string>
+    <string name="abrir_modelo_del_producto">Experience this feature</string>
     <string name="valoraci_n">Rating</string>
     <string name="ver_rese_as">See reviews</string>
     <string name="puede_que_te_guste">You might like</string>
@@ -217,6 +217,7 @@
     <string name="desea_cerrar_sesi_n">Do you want to logout?</string>
     <string name="cancelar">Cancel</string>
     <string name="salir">Logout</string>
+    <string name="realidad_aumentada">Realidad Aumentada</string>
     <!--BÚSQUEDA VISUAL-->
 
 </resources>

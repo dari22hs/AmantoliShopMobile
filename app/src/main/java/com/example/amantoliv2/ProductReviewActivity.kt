@@ -18,7 +18,7 @@ import com.bumptech.glide.Glide
 import com.example.amantoliv2.Adapter.ProductAdapter
 import com.example.amantoliv2.Model.Product
 import com.example.amantoliv2.Utils.DefaultCard.GetDefCard
-import com.example.amantoliv2.Utils.Extensions.cardXXGen
+//import com.example.amantoliv2.Utils.Extensions.cardXXGen
 import com.example.amantoliv2.Utils.Extensions.toast
 import com.example.amantoliv2.db.CartViewModel
 import com.example.amantoliv2.db.ProductEntity

@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatDelegate
 import com.example.amantoliv2.R
 import com.example.amantoliv2.databinding.FragmentDetailBinding
 import com.example.amantoliv2.Model.ProductAr
+import com.example.amantoliv2.ProductDetailsActivity
 import com.example.amantoliv2.products
 
 
@@ -25,7 +26,7 @@ class DetailFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+        //AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         _binding = FragmentDetailBinding.inflate(inflater, container, false)
         return binding.root
     }//End View?
@@ -66,7 +67,10 @@ class DetailFragment : Fragment() {
                 }
 
                 binding.buyNow.setOnClickListener {
-                    Toast.makeText(context, "Regresando", Toast.LENGTH_SHORT).show()
+                    //Toast.makeText(context, "Regresando", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(context, ProductDetailsActivity::class.java)
+                    startActivity(intent)
+
                 }
 
             }

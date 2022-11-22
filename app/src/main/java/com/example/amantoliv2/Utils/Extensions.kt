@@ -8,7 +8,7 @@ object Extensions {
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
     }
 
-    fun Activity.cardXXGen(card: String):String{
+    /*fun Activity.cardXXGen(card: String):String{
         var size:Int = card.length
         var CardG: String = ""
 
@@ -18,6 +18,6 @@ object Extensions {
                 CardG.plus(i)
             }
         }
-        return "**** **** **** **** $CardG"
-    }
+        return "$CardG"
+    }*/
 }
