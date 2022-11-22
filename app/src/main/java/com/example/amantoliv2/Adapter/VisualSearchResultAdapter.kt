@@ -33,7 +33,7 @@ class VisualSearchResultAdapter(private val productList: ArrayList<Product>, con
 
         Glide.with(ctx)
             .load(product.productImage)
-            .placeholder(R.drawable.product1clothes)
+            .placeholder(R.drawable.ajolotitologo)
             .into(holder.productImage_singleProduct)
 
 

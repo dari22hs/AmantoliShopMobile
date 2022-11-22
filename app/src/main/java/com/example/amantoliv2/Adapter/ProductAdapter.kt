@@ -35,7 +35,7 @@ class ProductAdapter(private val productList: ArrayList<Product>, context: Conte
 
         Glide.with(ctx)
             .load(product.productImage)
-            .placeholder(product1clothes)
+            .placeholder(ajolotitologo)
             .into(holder.productImage_singleProduct)
 
 

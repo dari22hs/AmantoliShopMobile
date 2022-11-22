@@ -11,5 +11,5 @@ data class Product (
     val productBrand:String = "",
     val productImage:String = "",
     val productCategory:String = "",
-    val productNote:String = "",
+    val productNote:String = ""
 )

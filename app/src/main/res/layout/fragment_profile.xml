@@ -37,17 +37,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
-
         <ImageView
             android:id="@+id/searchIv_ProfileFrag"
             android:layout_width="22dp"
             android:layout_height="22dp"
             android:src="@drawable/ic_search"
-            app:tint="@color/mainText"
-            />
+            app:tint="@color/mainText" />
 
     </LinearLayout>
-
 
     <!--ID LINEAR LAYOUT 3-->
     <LinearLayout

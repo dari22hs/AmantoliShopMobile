@@ -1,5 +1,6 @@
 package com.example.amantoliv2
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -14,7 +15,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.amantoliv2.Adapter.ProductAdapter
-import com.example.amantoliv2.Fragment.ProductReviewFragment
 import com.example.amantoliv2.Model.Product
 import com.example.amantoliv2.Utils.DefaultCard.GetDefCard
 import com.example.amantoliv2.Utils.Extensions.cardXXGen
@@ -54,6 +54,7 @@ class ProductDetailsActivity : AppCompatActivity() {
     lateinit var cardNumber: String
 
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_product_details)
@@ -77,6 +78,8 @@ class ProductDetailsActivity : AppCompatActivity() {
         val viewReviews_productDetailsPage:LinearLayout = findViewById(R.id.viewReviews_productDetailsPage)
         val cardNumberProduct_Details:TextView = findViewById(R.id.cardNumberProduct_Details)
 
+        val clProductDetails:ConstraintLayout = findViewById(R.id.clProductDetails)
+
         cardNumber = GetDefCard()
 
         if(cardNumber == "" || cardNumber == null){
@@ -86,7 +89,7 @@ class ProductDetailsActivity : AppCompatActivity() {
             cardNumberProduct_Details.text = cardXXGen(cardNumber)
         }
 
-        //Abrir métodos de pago
+        //Abrir modelos 3D
         shippingAddress_productDetailsPage.setOnClickListener {
             startActivity(Intent(this,AugmentedRealityActivity::class.java))
         }

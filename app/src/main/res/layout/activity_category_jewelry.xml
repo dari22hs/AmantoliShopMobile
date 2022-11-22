@@ -211,12 +211,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/jarrito_sp6"
-                            android:scaleType="centerCrop"/>
+                            android:src="@drawable/joy_aretes_balance"
+                            android:scaleType="fitXY"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Piel de Dragón"
+                            android:text="Aretes Balance"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
@@ -250,12 +250,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/jarron_ciudad_sp12"
-                            android:scaleType="centerCrop"/>
+                            android:src="@drawable/joy_collar_colorido"
+                            android:scaleType="fitXY"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Ciudad Barro"
+                            android:text="Collar de Vida"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
@@ -289,12 +289,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/jarro_flores_sp11"
+                            android:src="@drawable/joy_collar_cactus"
                             android:scaleType="centerCrop"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Flor de Ojo"
+                            android:text="Collar Cactus"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
@@ -328,12 +328,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/jarro_libelula_sp10"
+                            android:src="@drawable/joy_mariposas_del_paraiso"
                             android:scaleType="fitXY"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Sombra Libélula"
+                            android:text="Mariposa Paraíso"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
@@ -367,12 +367,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/alfa_jarrita_colorida"
+                            android:src="@drawable/joy_anillo_arbol_oro"
                             android:scaleType="centerCrop"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="La Colorada"
+                            android:text="Árbol de Oro"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
@@ -406,12 +406,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/alfa_flor_naranja"
-                            android:scaleType="centerCrop"/>
+                            android:src="@drawable/joy_aretes_aqua"
+                            android:scaleType="fitXY"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Flor de Campo"
+                            android:text="Aretes Turquesa"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
@@ -445,12 +445,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/alfa_peces_en_el_rio"
-                            android:scaleType="centerCrop"/>
+                            android:src="@drawable/joy_aretes_gotas"
+                            android:scaleType="fitXY"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Peces en el Río"
+                            android:text="Gotas Multicolor"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
@@ -484,12 +484,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/alfa_renacer"
-                            android:scaleType="fitXY"/>
+                            android:src="@drawable/joy_serpiente_rosca"
+                            android:scaleType="centerCrop"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="El Renacer"
+                            android:text="Rey Cascabel"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
@@ -523,12 +523,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/alfa_par_tazas"
-                            android:scaleType="fitXY"/>
+                            android:src="@drawable/joy_anillo_jaguar"
+                            android:scaleType="centerCrop"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Sol y Luna"
+                            android:text="Anillo Jaguar"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
@@ -562,12 +562,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/alfa_set_platos"
-                            android:scaleType="centerCrop"/>
+                            android:src="@drawable/joy_aretes_gimnasta"
+                            android:scaleType="fitXY"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Los Octillizos"
+                            android:text="El Gimnasta"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
@@ -601,12 +601,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/alfa_siameses"
+                            android:src="@drawable/joy_aretes_llenito"
                             android:scaleType="centerCrop"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Siameses"
+                            android:text="El Llenito"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
@@ -640,12 +640,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/alfa_set_tazones"
+                            android:src="@drawable/joy_collar_frutos_rojos"
                             android:scaleType="fitXY"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Tazón Trillizo"
+                            android:text="Collar Frutos"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
@@ -679,12 +679,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/alfa_tanque_agua"
+                            android:src="@drawable/joy_aretes_morados"
                             android:scaleType="fitXY"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Tanque de Agua"
+                            android:text="Circulando"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
@@ -718,12 +718,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/alfa_tierra_en_fuego"
+                            android:src="@drawable/joy_collar_azules"
                             android:scaleType="fitXY"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Tierra en Llamas"
+                            android:text="Planetitas"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
