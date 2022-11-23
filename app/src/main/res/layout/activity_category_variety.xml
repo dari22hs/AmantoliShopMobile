@@ -211,12 +211,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/jarrito_sp6"
-                            android:scaleType="centerCrop"/>
+                            android:src="@drawable/varios_buho_atrapador"
+                            android:scaleType="fitXY"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Piel de Dragón"
+                            android:text="Búho Soñador"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
@@ -250,22 +250,20 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/jarron_ciudad_sp12"
+                            android:src="@drawable/varios_alcancia_cerdo_negro"
                             android:scaleType="centerCrop"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Ciudad Barro"
+                            android:text="Gira Sombra  "
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
                             android:textColor="@color/mainText" />
 
-
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
-
                 <!-- CV 1 - 0 -->
                 <androidx.cardview.widget.CardView
                     android:layout_width="wrap_content"
@@ -289,12 +287,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/jarro_flores_sp11"
+                            android:src="@drawable/varios_alcancia_cerdo_colorado"
                             android:scaleType="centerCrop"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Flor de Ojo"
+                            android:text="Estampón"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
@@ -328,12 +326,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/jarro_libelula_sp10"
+                            android:src="@drawable/varios_aquapig"
                             android:scaleType="fitXY"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Sombra Libélula"
+                            android:text="Aqua Pig"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
@@ -367,12 +365,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/alfa_jarrita_colorida"
-                            android:scaleType="centerCrop"/>
+                            android:src="@drawable/varios_atrapa_arcoiris"
+                            android:scaleType="fitXY"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="La Colorada"
+                            android:text="Atrapa Arco"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
@@ -406,12 +404,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/alfa_flor_naranja"
+                            android:src="@drawable/varios_cabacerdo"
                             android:scaleType="centerCrop"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Flor de Campo"
+                            android:text="Cabacerdo"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
@@ -445,12 +443,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/alfa_peces_en_el_rio"
+                            android:src="@drawable/varios_cerdonio"
                             android:scaleType="centerCrop"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Peces en el Río"
+                            android:text="Cerdiño"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
@@ -484,12 +482,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/alfa_renacer"
+                            android:src="@drawable/varios_pinata_burrin"
                             android:scaleType="fitXY"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="El Renacer"
+                            android:text="Mi Burrito"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
@@ -523,12 +521,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/alfa_par_tazas"
-                            android:scaleType="fitXY"/>
+                            android:src="@drawable/varios_porta_agujas"
+                            android:scaleType="centerCrop"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Sol y Luna"
+                            android:text="El Agujero"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
@@ -562,12 +560,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/alfa_set_platos"
-                            android:scaleType="centerCrop"/>
+                            android:src="@drawable/varios_pinata_dos"
+                            android:scaleType="fitXY"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Los Octillizos"
+                            android:text="Los Dos"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
@@ -601,12 +599,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/alfa_siameses"
-                            android:scaleType="centerCrop"/>
+                            android:src="@drawable/varios_pulsera_tela"
+                            android:scaleType="fitXY"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Siameses"
+                            android:text="Sencishita"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
@@ -640,12 +638,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/alfa_set_tazones"
+                            android:src="@drawable/varios_llavero_buho"
                             android:scaleType="fitXY"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Tazón Trillizo"
+                            android:text="Llavero Búho"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
@@ -679,12 +677,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/alfa_tanque_agua"
+                            android:src="@drawable/varios_llavero_cereza"
                             android:scaleType="fitXY"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Tanque de Agua"
+                            android:text="Cerecitas"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
@@ -718,12 +716,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/alfa_tierra_en_fuego"
+                            android:src="@drawable/varios_llavero_musical"
                             android:scaleType="fitXY"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Tierra en Llamas"
+                            android:text="Musiquín"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"

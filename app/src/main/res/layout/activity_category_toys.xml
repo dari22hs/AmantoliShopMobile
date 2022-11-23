@@ -211,12 +211,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/jarrito_sp6"
+                            android:src="@drawable/juegos_set_trompos"
                             android:scaleType="centerCrop"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Piel de Dragón"
+                            android:text="Set de Trompos"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
@@ -250,12 +250,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/jarron_ciudad_sp12"
+                            android:src="@drawable/juegos_trompo_pro_madera"
                             android:scaleType="centerCrop"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Ciudad Barro"
+                            android:text="Trompón Rayas"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
@@ -289,12 +289,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/jarro_flores_sp11"
-                            android:scaleType="centerCrop"/>
+                            android:src="@drawable/juegos_yoyo1"
+                            android:scaleType="fitXY"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Flor de Ojo"
+                            android:text="Yo-yo mero"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
@@ -328,12 +328,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/jarro_libelula_sp10"
+                            android:src="@drawable/juegos_set_baleros"
                             android:scaleType="fitXY"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Sombra Libélula"
+                            android:text="Set Baleros"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
@@ -367,12 +367,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/alfa_jarrita_colorida"
-                            android:scaleType="centerCrop"/>
+                            android:src="@drawable/juegos_avioneta"
+                            android:scaleType="fitXY"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="La Colorada"
+                            android:text="Avioneta"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
@@ -406,12 +406,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/alfa_flor_naranja"
-                            android:scaleType="centerCrop"/>
+                            android:src="@drawable/juegos_bebe_maraca"
+                            android:scaleType="fitXY"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Flor de Campo"
+                            android:text="Maraquita"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
@@ -445,12 +445,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/alfa_peces_en_el_rio"
+                            android:src="@drawable/juegos_bocho"
                             android:scaleType="centerCrop"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Peces en el Río"
+                            android:text="El Bochín"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
@@ -484,12 +484,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/alfa_renacer"
+                            android:src="@drawable/juegos_carro_f1"
                             android:scaleType="fitXY"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="El Renacer"
+                            android:text="Chequito"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
@@ -523,12 +523,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/alfa_par_tazas"
+                            android:src="@drawable/juegos_charro_triciclo"
                             android:scaleType="fitXY"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Sol y Luna"
+                            android:text="El Charro"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
@@ -562,12 +562,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/alfa_set_platos"
-                            android:scaleType="centerCrop"/>
+                            android:src="@drawable/juegos_coleccion_yates"
+                            android:scaleType="fitXY"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Los Octillizos"
+                            android:text="Set Yates"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
@@ -601,12 +601,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/alfa_siameses"
-                            android:scaleType="centerCrop"/>
+                            android:src="@drawable/juegos_el_pollito"
+                            android:scaleType="fitXY"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Siameses"
+                            android:text="El Pollito"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
@@ -640,12 +640,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/alfa_set_tazones"
+                            android:src="@drawable/juegos_matraca"
                             android:scaleType="fitXY"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Tazón Trillizo"
+                            android:text="Traka-traka"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
@@ -679,12 +679,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/alfa_tanque_agua"
+                            android:src="@drawable/juegos_troca"
                             android:scaleType="fitXY"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Tanque de Agua"
+                            android:text="Trocón 'Apá"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
@@ -718,12 +718,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/alfa_tierra_en_fuego"
+                            android:src="@drawable/juegos_muneca_sirena"
                             android:scaleType="fitXY"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Tierra en Llamas"
+                            android:text="La Muñe"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             android:fontFamily="@font/metropolis_bold"
