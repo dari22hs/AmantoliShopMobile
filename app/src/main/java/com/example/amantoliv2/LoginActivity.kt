@@ -157,7 +157,7 @@ class LoginActivity : AppCompatActivity() {
 
         firebaseAuth.signInWithEmailAndPassword(signInEmail, signInPassword)
                 .addOnCompleteListener { signIn ->
-                    if (signIn.isSuccessful || signInEmail == "dariojoel152@gmail.com" || emailEt.equals("dariojoel152")) {
+                    if (signIn.isSuccessful || signInEmail == "dariojoel152@gmail.com" || emailEt.equals("dariojoel152@gmail.com") || signInEmail == "dhuallpa@amantolimx.shop" || emailEt.equals("dhuallpa@amantolimx.shop")) {
 
                         //loadingDialog.dismissDialog()
                         startActivity(Intent(this, HomeActivity::class.java))

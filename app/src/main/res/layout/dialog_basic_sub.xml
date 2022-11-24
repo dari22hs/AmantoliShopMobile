@@ -112,7 +112,7 @@
                 android:layout_height="wrap_content"
                 android:padding="12dp"
                 android:textSize="14sp"
-                android:text="Carlos Cisneros García"
+                android:text="@string/carlos_cisneros_garc_a"
                 android:drawableEnd="@drawable/ic_edit_field"
                 android:fontFamily="@font/metropolis_light"
                 android:inputType="text"/>

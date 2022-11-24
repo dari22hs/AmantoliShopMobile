@@ -1,5 +1,6 @@
 package com.example.amantoliv2.Fragment
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
 import android.net.Uri
@@ -68,6 +69,7 @@ class ProfileFragment : Fragment() {
     lateinit var linearLayout3:LinearLayout
     lateinit var linearLayout4:LinearLayout
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -237,8 +239,8 @@ class ProfileFragment : Fragment() {
 
             withContext(Dispatchers.Main){
 
-                profileName_profileFrag.text = userName
-                profileEmail_profileFrag.text = userEmail
+                profileName_profileFrag.text = "Darío Huallpa"
+                profileEmail_profileFrag.text = "dhuallpa@amantolimx.shop"
                 Glide.with(this@ProfileFragment)
                     .load(userImage)
                     .placeholder(R.drawable.ic_profile)

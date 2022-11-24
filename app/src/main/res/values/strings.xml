@@ -30,7 +30,7 @@
     <string name="favoritos">Favoritos</string>
     <string name="perfil">Perfil</string>
     <string name="mi_perfil">Mi perfil</string>
-    <string name="nombre">Nombre</string>
+    <string name="nombre">Darío Huallpa</string>
     <string name="correo_electr_nico">Correo electrónico</string>
     <string name="mis_pedidos">Mis pedidos</string>
     <string name="direcciones_de_env_o">Direcciones de envío</string>
@@ -213,5 +213,6 @@
     <string name="cancelar">Cancelar</string>
     <string name="salir">Salir</string>
     <string name="realidad_aumentada">Realidad Aumentada</string>
+    <string name="carlos_cisneros_garc_a">Darío Huallpa</string>
 
 </resources>

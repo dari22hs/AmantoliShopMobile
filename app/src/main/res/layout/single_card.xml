@@ -70,7 +70,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/metropolis_semibold"
                 android:maxLines="2"
-                android:text="Carlos Cisneros"
+                android:text="@string/carlos_cisneros_garc_a"
                 android:maxEms="18"
                 android:textColor="@color/white"
                 android:textSize="14sp" />

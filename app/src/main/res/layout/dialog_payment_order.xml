@@ -79,7 +79,7 @@
                     android:textSize="18sp"
                     android:fontFamily="@font/metropolis_bold"
                     android:inputType="none"
-                    android:text="$250 MXN"
+                    android:text="$1,940 MXN"
                     android:textAlignment="center"
                     android:textColor="@color/mainText"
                     android:gravity="center"
@@ -111,7 +111,7 @@
                 android:layout_height="wrap_content"
                 android:padding="12dp"
                 android:textSize="14sp"
-                android:text="Carlos Cisneros García"
+                android:text="@string/carlos_cisneros_garc_a"
                 android:drawableEnd="@drawable/ic_edit_field"
                 android:fontFamily="@font/metropolis_light"
                 android:inputType="text"/>

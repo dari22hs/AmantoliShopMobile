@@ -1,6 +1,8 @@
 package com.example.amantoliv2.Fragment
 
 import android.content.Context
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 
 import androidx.fragment.app.Fragment
@@ -10,6 +12,8 @@ import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.widget.AppCompatButton
 
 import androidx.lifecycle.Observer
 
@@ -30,6 +34,7 @@ class BagFragment : Fragment(), CartItemClickAdapter {
 
     lateinit var cartRecView:RecyclerView
     lateinit var cartAdapter: CartAdapter
+    lateinit var checkOut_BagPage: AppCompatButton
     lateinit var animationView: LottieAnimationView
     lateinit var totalPriceBagFrag:TextView
     lateinit var Item: ArrayList<ProductEntity>
@@ -52,6 +57,8 @@ class BagFragment : Fragment(), CartItemClickAdapter {
         cartRecView = view.findViewById(R.id.cartRecView)
         animationView = view.findViewById(R.id.animationViewCartPage)
         totalPriceBagFrag = view.findViewById(R.id.totalPriceBagFrag)
+        checkOut_BagPage = view.findViewById(R.id.checkOut_BagPage)
+
         val bottomCartLayout:LinearLayout = view.findViewById(R.id.bottomCartLayout)
         val emptyBagMsgLayout:LinearLayout = view.findViewById(R.id.emptyBagMsgLayout)
         val MybagText:TextView = view.findViewById(R.id.MybagText)
@@ -99,8 +106,47 @@ class BagFragment : Fragment(), CartItemClickAdapter {
             totalPriceBagFrag.text = "$" + sum
         })
 
+        checkOut_BagPage.setOnClickListener {
+            val view = View.inflate(activity, R.layout.dialog_payment_order, null)
+
+            var btnProceedToPayment: AppCompatButton = view.findViewById(R.id.btnProceedToPayment)
+            var btnCloseAddressDialog: AppCompatButton = view.findViewById(R.id.btnCloseAddressDialog)
+
+            val builder = activity?.let { it1 -> AlertDialog.Builder(it1) }
+            if (builder != null) {
+                builder.setView(view)
+            }
+
+            val dialog = builder?.create()
+            if (dialog != null) {
+                dialog.show()
+            }
+            if (dialog != null) {
+                dialog.window?.setBackgroundDrawableResource(android.R.color.transparent)
+            }
+
+            btnProceedToPayment.setOnClickListener {
+                if (dialog != null) {
+                    openLink(view)
+                    dialog.dismiss()
+                }
+            }//End btnCancelLogout.setOnClickListener
+
+            btnCloseAddressDialog.setOnClickListener {
+                dialog?.dismiss()
+            }
+
+        }
+
         return view
     }
+
+    fun openLink(view: View) {
+        val uri = Uri.parse("https://www.paypal.com/mx/home")
+        val intent = Intent(Intent.ACTION_VIEW, uri)
+        startActivity(intent)
+
+    }//Fin función openLink (PayPal)
 
     override fun onItemDeleteClick(product: ProductEntity) {
         cartViewModel.deleteCart(product)
